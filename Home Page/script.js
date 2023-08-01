@@ -1,3 +1,3 @@
-document.getElementById({
-    
+document.addEventListener('DOMContentLoaded', function() {
+ 
 });
