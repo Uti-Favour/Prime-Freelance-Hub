@@ -12,7 +12,7 @@ We welcome developers and enthusiasts to contribute to the growth and success of
 2. Clone your forked repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/Your-Username/Prime-Freelance-Hub.git
+git clone https://github.com/Uti-Favour/Prime-Freelance-Hub.git
 ```
 
 3. Change into the project directory:
