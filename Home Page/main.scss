@@ -4,8 +4,8 @@ $secondaryColor:black;
 $hoverColor: black;
 
 @use "-root";
-@use "-landing";
 
+@use "-landing";
 
 
 // Basic CSS reset for cleaner styling
@@ -87,6 +87,7 @@ nav {
     color: #fff;
   }
 }
+
 
 
 
