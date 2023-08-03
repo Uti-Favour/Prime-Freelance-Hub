@@ -1,7 +1,7 @@
 // Variables for reusability
 $primaryColor: #fff;
-$secondaryColor:#007bff;
-$hoverColor: #007bff;
+$secondaryColor:black;
+$hoverColor: black;
 
 @use "-root";
 
@@ -16,6 +16,7 @@ $hoverColor: #007bff;
 
 body {
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 // Navigation Bar styles
@@ -70,17 +71,19 @@ nav {
 
 // Button styles
 .btn {
-  background-color: $secondaryColor;
-  color: #fff;
+  background-color: transparent;
+  color: black;
   padding: 15px 40px;
   border: none;
   border-radius: 40px;
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
+  border: 1px solid black;
 
   &:hover {
-    background-color: darken($secondaryColor, 10%);
+    background-color: darken(black, 10%);
+    color: #fff;
   }
 }
 
