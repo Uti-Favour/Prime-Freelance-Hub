@@ -3,6 +3,8 @@ $primaryColor: #fff;
 $secondaryColor:#007bff;
 $hoverColor: #007bff;
 
+@use "-root";
+
 // Basic CSS reset for cleaner styling
 * {
   margin: 0;
@@ -79,3 +81,6 @@ nav {
     background-color: darken($secondaryColor, 10%);
   }
 }
+
+
+@use "_landing";
