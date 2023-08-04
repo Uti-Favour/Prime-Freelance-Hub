@@ -3,4 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
  next = 20 * 30;
 
  console.log(btn);
+
+ let a = [
+    firstName = favour,
+ ];
 });
