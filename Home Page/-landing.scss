@@ -26,6 +26,7 @@ nav {
   padding: 10px 20px;
   margin-top: 30px;
 
+
   h1 {
     font-size: 24px;
     color: black;
@@ -85,71 +86,3 @@ nav {
 }
 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-.landing-page-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  background-color: #f0f0f0;
-}
-
-.left-content {
-  width: 50%;
-}
-
-.right-content {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.cta-buttons {
-  display: flex;
-
-  button {
-    margin-right: 10px;
-  }
-}
-
-.video-container {
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-
-  video {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-  }
-
-  button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-}
