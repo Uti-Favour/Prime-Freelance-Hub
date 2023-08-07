@@ -1,8 +1,7 @@
 // Variables for reusability
 $primaryColor: #fff;
-$secondaryColor:black;
+$secondaryColor: black;
 $hoverColor: black;
-
 
 // Basic CSS reset for cleaner styling
 * {
@@ -15,7 +14,16 @@ body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
 }
-
+hr{
+  position: relative;
+  left: 400px;
+  color: rgba(223, 215, 215, 0.45);
+  align-self: center;
+  justify-content: center;
+  max-width: 50%;
+  height: 0.5px;
+  
+}
 // Navigation Bar styles
 nav {
   background-color: $primaryColor;
@@ -25,7 +33,7 @@ nav {
   align-items: center;
   padding: 10px 20px;
   margin-top: 30px;
-
+  position: relative;
 
   h1 {
     font-size: 24px;
@@ -68,17 +76,52 @@ nav {
   }
 }
 
-// Button styles
+.header_right_form {
+  position: relative;
+  width: var(--input-form-width);
+}
+
+.header_right_form input {
+  height: var(--input-height);
+  border-radius: var(--input-radius);
+  border: 1px solid var(--grey-light);
+  outline: none;
+  width: 100%;
+  padding-left: 5rem;
+}
+
+.header_right_form input::placeholder {
+  font-weight: 700;
+  padding: 0.8rem;
+}
+
+.header_right_form_input_icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 11px;
+  left: 16px;
+}
+
+.header_right_form_input_icons img:nth-child(1) {
+  width: 20px;
+}
+
+.header_right_form_input_icons img:nth-child(2) {
+  width: 12px;
+}
+
 .btn {
   background-color: transparent;
   color: black;
-  padding: 15px 40px;
+  padding: 10px 40px;
   border: none;
   border-radius: 40px;
   font-size: 16px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   border: 1px solid black;
+  margin-top: 15px;
 
   &:hover {
     background-color: darken(black, 10%);
@@ -86,54 +129,50 @@ nav {
   }
 }
 
-
-.landing_page_section{
-margin-top: 50px;
-
+.landing_page_section {
+  margin-top: 50px;
 }
-.landing_text{
+.landing_text {
   font-family: sans-serif;
   margin-left: 90px;
 
-  h1{
+  h1 {
     font-weight: 800;
     font-size: 50px;
-
   }
 
-  p{
+  p {
     color: grey;
     font-weight: 500;
     margin-top: 20px;
     line-height: 25px;
   }
 
-  .btn{
+  .btn {
     padding: 10px 20px;
     margin-top: 30px;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: black;
     font-weight: 100;
   }
 }
 
-.Landing_Video{
-position: absolute;
-right: 90px;
-height: auto;
-width: 600px;
-top: 160px;
+.Landing_Video {
+  position: absolute;
+  right: 90px;
+  height: auto;
+  width: 600px;
+  top: 160px;
 
-.vid{
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 30px;
+  .vid {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+  }
 }
-}
-
 
 .section_1_bottom_left_companies_logo {
   display: flex;
@@ -175,7 +214,6 @@ top: 160px;
   width: 480px;
 }
 
-
 /*Section 2 css start*/
 .section_2 {
   font-size: 1.6rem;
@@ -189,40 +227,36 @@ top: 160px;
   margin-left: 120px;
   margin-top: 100px;
 
-
-
-  h3{
+  h3 {
     font-size: 30px;
     margin-bottom: 10px;
     font-weight: 600;
   }
-  p{
+  p {
     font-size: 18px;
   }
 
-  div{
+  div {
     display: flex;
     font-size: 1.6rem;
     font-weight: 500;
   }
 
-  div p{
+  div p {
     color: var(--grey);
     margin-right: 0.5rem;
     margin-bottom: 40px;
   }
 
-  div a{
+  div a {
     text-decoration: none;
     font-size: 18px;
   }
 
   div a:hover {
     text-decoration: underline;
-
   }
-  }
-
+}
 
 .section_2_categories {
   display: flex;
@@ -277,8 +311,6 @@ top: 160px;
 .section_2_categories_tile div span:first-of-type img {
   height: 12px;
 }
-span{
+span {
   font-size: 63.5%;
 }
-
-
