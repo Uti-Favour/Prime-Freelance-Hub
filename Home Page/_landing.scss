@@ -133,30 +133,9 @@ hr{
   height: 0.5px;
   
 }
-.btn-1 {
-  background-color: transparent;
-  color: black;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 400;
-  border: 1px solid black;
-  margin-top: 40px;
-}
-.btn-2{
-  background-color: transparent;
-  color: black;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 40px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 400;
-  border: 1px solid black;
-  margin-top: 40px;
-  margin-left: 15px;
+.btn{
+  padding: 10px 20px;
+  margin-top: 30px;
 }
 
 .landing_page_section {
@@ -179,10 +158,32 @@ hr{
     line-height: 25px;
   }
 
-  .btn {
-    padding: 10px 20px;
-    margin-top: 30px;
+  .btn-1 {
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-top: 40px;
   }
+  .btn-2{
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  
 
   a {
     text-decoration: none;
@@ -350,6 +351,7 @@ span {
 
 
 // ===========================Section 3==============================
+
 
 // =============================Footer==============================
 .footer {

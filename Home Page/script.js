@@ -1,37 +1,24 @@
+// JavaScript to handle the carousel/slideshow
 document.addEventListener('DOMContentLoaded', function() {
-   // Variables
-  let currentPage = 1;
-  const totalPages = 4;
-  const carouselInterval = 5000; // Change this value to set the carousel interval (in milliseconds)
+  const carouselItems = document.querySelectorAll('.landing_text .carousel-item');
+  const intervalDuration = 5000; // Time interval between slide transitions (in milliseconds)
+  let currentSlide = 0;
 
-  // Function to show the current page and hide others
-  function showCurrentPage() {
-    for (let i = 1; i <= totalPages; i++) {
-      const page = document.querySelector(`.landing_page_section:nth-child(${i})`);
-      if (i === currentPage) {
-        page.style.display = 'block';
-      } else {
-        page.style.display = 'none';
-      }
+  function showSlide(slideIndex) {
+    for (let i = 0; i < carouselItems.length; i++) {
+      carouselItems[i].style.display = 'none';
     }
+    carouselItems[slideIndex].style.display = 'block';
   }
 
-  // Function to switch to the next page
-  function goToNextPage() {
-    currentPage++;
-    if (currentPage > totalPages) {
-      currentPage = 1;
-    }
-    showCurrentPage();
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % carouselItems.length;
+    showSlide(currentSlide);
   }
 
-  // Function to start the carousel
-  function startCarousel() {
-    showCurrentPage();
-    setInterval(goToNextPage, carouselInterval);
-  }
+  // Hide all carousel items except the first one
+  showSlide(currentSlide);
 
-  // Start the carousel when the document has finished loading
-  document.addEventListener('DOMContentLoaded', startCarousel);
-   
+  // Start the slideshow
+  setInterval(nextSlide, intervalDuration);
 });
