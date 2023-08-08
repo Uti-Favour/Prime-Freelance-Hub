@@ -354,21 +354,27 @@ span {
 
 // ===========================Section 3==============================
 .box-container {
-  width: 70%; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
-  background-color: #e0e0e0; /* Set your desired background color */
+  width: 90%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-color: #14a800; /* Set your desired background color */
   display: flex;
   align-items: center;
   justify-content: center; /* Center horizontally */
   margin: 0 auto; /* To center the container */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
 }
 
 .text-section {
   flex: 1;
   padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Vertically center items */
+  align-items: flex-start; /* Align items to the left */
+  margin-left: 5%;
+  color: white;
 }
 
 .image-right {
@@ -385,22 +391,24 @@ img {
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid white;
 }
 
 a {
