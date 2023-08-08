@@ -355,7 +355,7 @@ span {
 // ===========================Section 3==============================
 .box-container {
   width: 90%; /* Adjust the width as needed */
-  height: 400px; /* Adjust the height as needed */
+  height: 500px; /* Adjust the height as needed */
   background-color: #14a800; /* Set your desired background color */
   display: flex;
   align-items: center;
@@ -377,18 +377,7 @@ span {
   color: white;
 }
 
-.image-right {
-  width: 40%; /* Adjust the width of the image container */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
 
 h1 {
   font-size: 40px;
@@ -399,10 +388,15 @@ p {
   font-size: 20px;
   margin-bottom: 20px;
 }
+.span-like{
+  font-size: 40px;
+  color: yellow;
+  font-style: italic;
+}
 
 button {
   padding: 10px 20px;
-  background-color: transparent;
+  background-color: white;
   color: white;
   border: none;
   cursor: pointer;
@@ -412,10 +406,21 @@ button {
 }
 
 a {
-  color: white;
+  color: green;
   text-decoration: none;
+  font-weight: 500;
+}
+.box-image{
+  width: auto;
+  height: auto;
+  
+ 
 }
 
+.box-img{
+  width: 90%; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+}
 
 // =============================Footer==============================
 .footer {
