@@ -22,3 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Start the slideshow
   setInterval(nextSlide, intervalDuration);
 });
+
+
+

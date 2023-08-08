@@ -246,6 +246,8 @@ hr{
   width: 480px;
 }
 
+
+
 /*Section 2 css start*/
 .section_2 {
   font-size: 1.6rem;
@@ -351,6 +353,60 @@ span {
 
 
 // ===========================Section 3==============================
+.box-container {
+  width: 70%; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-color: #e0e0e0; /* Set your desired background color */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin: 0 auto; /* To center the container */
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-right {
+  width: 40%; /* Adjust the width of the image container */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
 
 
 // =============================Footer==============================
