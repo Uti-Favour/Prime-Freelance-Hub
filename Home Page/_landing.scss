@@ -420,6 +420,173 @@ a {
   height: 500px; /* Adjust the height as needed */
 }
 
+
+
+
+
+// =================why prime========================
+// =======================Left and right text span=======================
+.chooseGuruBackground {
+  background: green;
+}
+@media screen and (min-width: 60rem) {
+  .chooseGuruBackground {
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: auto !important;
+  }
+  .chooseGuruBackground--bottomImage {
+    padding-bottom: 10rem !important;
+    background-position: 50% 100% !important;
+  }
+  .chooseGuruBackground--light {
+    background-image: url("https://res.cloudinary.com/gurucom/image/upload/s--Tj6PfVUM--/c_scale,w_1026/v1602267432/static/homepage/chooseguru-light_2x_wpf1b3.png") !important;
+    background-color: #f7f7f7 !important;
+  }
+}
+@media screen and (min-width: 60rem) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 60rem) and (min-resolution: 192dpi) {
+  .chooseGuruBackground--bottomImage {
+    background-image: url("https://res.cloudinary.com/gurucom/image/upload/f_auto,w_2126,b_rgb:2b3247/static/homepage/chooseguru_2x_rzilkv.jpg") !important;
+    background-size: 75% !important;
+  }
+  .chooseGuruBackground--light {
+    background-image: url("https://res.cloudinary.com/gurucom/image/upload/f_auto,w_2126,b_rgb:f7f7f7/v1602267432/static/homepage/chooseguru-light_2x_wpf1b3.png") !important;
+  }
+}
+.chooseGuruBackground.lazy {
+  background-image: none !important;
+}
+.c-chooseGuru {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  margin-top: 10%;
+  top: 10%;
+  color: white;
+}
+.c-chooseGuru__value {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+@media screen and (min-width: 60rem) {
+  .c-chooseGuru__value--left {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    -webkit-box-flex: 0 !important;
+    -ms-flex: 0 1 45% !important;
+    flex: 0 1 45% !important;
+  }
+}
+
+.c-chooseGuru__value__image {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.c-chooseGuru__value__paragraph {
+  display: none;
+}
+.c-chooseGuru__cta {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 40rem) {
+  .c-chooseGuru__value {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+}
+@media screen and (min-width: 60rem) {
+  .c-chooseGuru__value {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 31%;
+    flex: 0 1 31%;
+    margin-bottom: 2rem;
+    margin-left: 19%;
+    margin-right: 0;
+  }
+  .c-chooseGuru__value__image {
+    margin: 0 1rem 0 0;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .c-chooseGuru__value__image--left {
+    -webkit-box-ordinal-group: 1 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+    margin: 0 1rem 0 0 !important;
+  }
+  .c-chooseGuru__value__meta {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  .c-chooseGuru__value__meta--left {
+    text-align: left !important;
+  }
+  .c-chooseGuru__value__paragraph {
+    display: block;
+    margin-bottom: 0;
+  }
+  .c-chooseGuru__value:nth-child(2n-1) {
+    margin-left: 0;
+    margin-right: 19%;
+  }
+  .c-chooseGuru__value:nth-child(2n-1) .c-chooseGuru__value__image {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin: 0 0 0 1rem;
+  }
+  .c-chooseGuru__value:nth-child(2n-1) .c-chooseGuru__value__meta {
+    text-align: right;
+  }
+  .c-chooseGuru__cta {
+    -ms-flex-preferred-size: calc(31% - 40px - 1rem);
+    flex-basis: calc(31% - 40px - 1rem);
+    text-align: left;
+    margin: 0;
+  }
+}
+
+
+
+
 // =============================Footer==============================
 .footer {
   padding: 90px 125px;
