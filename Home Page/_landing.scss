@@ -408,29 +408,29 @@ a {
   height: 500px; /* Adjust the height as needed */
 }
 
-// ===================Prime Video===============================
+/* ===================Prime Video=============================== */
 
 .image-container {
   width: 90%;
   height: 600px;
   background-color: #450202;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Change align-items to flex-start */
   justify-content: center;
   margin: 0 auto;
   border-radius: 20px;
   position: relative;
   margin-top: 10%;
-
 }
+
 .image-container .image {
   flex: 1;
   padding: 20px;
 }
 
 .image-container .image img {
-  width:600px;
-  height:550px;
+  width: 600px;
+  height: 550px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -438,20 +438,37 @@ a {
   border-bottom-right-radius: 20px;
 }
 
-.image-container .text {
-  flex: 1;
-  padding: 20px;
+.text-container {
   color: white;
+  flex-direction: column;
+  margin-left: 20px;
+  display: flex;
+  flex: 1;
+  align-self: flex-start; /* Add this line to align the text container to the top */
+  margin-top: 80px;
+}
+.list{
+  margin-top: 50px;
 }
 
-.image-container .text h1 {
-  font-size: 24px;
+
+.list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.image-container .text p {
-  font-size: 16px;
+.list li i {
+  margin-right: 10px;
+  /* Add margin or padding to create space between the icon and text */
+  margin-bottom: 2px; /* Example margin for spacing */
 }
+
 // =============================Footer==============================
 .footer {
   padding: 90px 125px;
