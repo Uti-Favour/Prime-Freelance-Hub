@@ -447,8 +447,17 @@ a {
   align-self: flex-start; /* Add this line to align the text container to the top */
   margin-top: 80px;
 }
+.box-text h1{
+  font-size: 50px;
+}
+.box-text-span{
+  font-size: 50px;
+  color: rgb(192, 3, 3);
+  font-style: italic;
+}
 .list{
-  margin-top: 50px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
 }
 
 
@@ -457,19 +466,25 @@ a {
   padding: 0;
 }
 
-.list li {
+.list p {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.list li i {
+.list p i {
   margin-right: 10px;
-  /* Add margin or padding to create space between the icon and text */
   margin-bottom: 2px; /* Example margin for spacing */
 }
-
-// =============================Footer==============================
+.box-div{
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+.a-btn{
+  color: rgb(192, 3, 3);
+  font-family: sans-serif;
+}
+  // =============================Footer==============================
 .footer {
   padding: 90px 125px;
 
