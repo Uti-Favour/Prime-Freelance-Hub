@@ -410,83 +410,48 @@ a {
 
 // ===================Prime Video===============================
 
-.video-container {
-  width: 90%; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
-  background-color: #14a800; /* Set your desired background color */
+.image-container {
+  width: 90%;
+  height: 600px;
+  background-color: #450202;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center horizontally */
-  margin: 0 auto; /* To center the container */
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 20px;
   position: relative;
-  margin-top: 20%;
-}
+  margin-top: 10%;
 
-.text-section {
+}
+.image-container .image {
   flex: 1;
   padding: 20px;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Vertically center items */
-  align-items: flex-start; /* Align items to the left */
-  margin-left: 5%;
+}
+
+.image-container .image img {
+  width:600px;
+  height:550px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.image-container .text {
+  flex: 1;
+  padding: 20px;
   color: white;
-
-
-  
-h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
 }
 
-
-p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.image-container .text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.span-like {
-  font-size: 40px;
-  color: yellow;
-  font-style: italic;
+.image-container .text p {
+  font-size: 16px;
 }
-
-button {
-  padding: 10px 20px;
-  background-color: white;
-  color: white;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 30px;
-  border: 1px solid white;
-}
-
-
-a {
-  color: green;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-}
-
-
-.box-video {
-  height: 500px; /* Adjust the height as needed */
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-.box-vid {
-  width: 80%; /* Adjust the width as needed */
-  height: 600px; /* Adjust the height as needed */
-}
-
 // =============================Footer==============================
 .footer {
   padding: 90px 125px;
