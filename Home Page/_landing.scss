@@ -330,20 +330,20 @@ p {
 button {
   padding: 10px 20px;
   background-color: white;
-  color: white;
   border: none;
   cursor: pointer;
-  text-decoration: none;
   border-radius: 30px;
   border: 1px solid white;
-  margin-top: 20%;
-  font-weight: 800;
+  margin-top: 10%;
+  
 }
 
 a {
   color: green;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold; /* Make the text bold */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 .box-image {
   height: 500px; /* Adjust the height as needed */
@@ -382,10 +382,14 @@ a {
   }
 
   .text-section h1{
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .text-section p{
+    font-size: 23px;
   }
   .text-section .span-like{
-    font-size: 45px;
+    font-size: 40px;
   }
 
 }
