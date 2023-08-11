@@ -242,6 +242,25 @@ span {
   display: none;
 }
 
+
+.see-more-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px; /* Adjust this value to control the spacing */
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.see-more-button:hover {
+  background-color: var(--primary-dark);
+}
 // ===========================Section 3==============================
 .box-container {
   width: 90%; /* Adjust the width as needed */
@@ -254,6 +273,7 @@ span {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   position: relative;
+  top: 10%;
 }
 
 .text-section {
