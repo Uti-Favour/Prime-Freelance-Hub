@@ -263,6 +263,29 @@ span {
 .see-less-button:hover  {
   background-color: var(--primary-dark);
 }
+
+@media screen and (max-width: 768px) {
+  .section_2_header{
+    margin-left: 50px;
+  }
+  .section_2_header h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .section_2_header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .section_2_header  a{
+    font-size: 16px;
+  }
+
+  .section_2_categories_tile {
+    width: 300px;
+  }
+}
+
 // ===========================Section 3==============================
 .box-container {
   width: 90%; /* Adjust the width as needed */
