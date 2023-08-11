@@ -313,7 +313,7 @@ span {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -322,7 +322,7 @@ p {
   margin-bottom: 20px;
 }
 .span-like {
-  font-size: 55px;
+  font-size: 50px;
   color: yellow;
   font-style: italic;
 }
@@ -342,7 +342,7 @@ a {
   color: green;
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
 }
 .box-image {
@@ -437,6 +437,9 @@ a {
 .box-text h1{
   font-size: 50px;
 }
+.box-text p{
+  font-size: 25px;
+}
 .box-text-span{
   font-size: 50px;
   color: rgb(192, 3, 3);
@@ -453,13 +456,13 @@ a {
   padding: 0;
 }
 
-.list p {
+.list li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.list p i {
+.list li i {
   margin-right: 10px;
   margin-bottom: 2px; /* Example margin for spacing */
   font-size: 19px;
