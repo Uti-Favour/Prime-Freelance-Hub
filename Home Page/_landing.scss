@@ -1,9 +1,5 @@
-// Variables for reusability
-$primaryColor: #fff;
-$secondaryColor: black;
-$hoverColor: black;
+@use "_root";
 
-// Basic CSS reset for cleaner styling
 * {
   margin: 0;
   padding: 0;
@@ -248,7 +244,7 @@ span {
   background-color: var(--primary);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -296,7 +292,6 @@ span {
   justify-content: center; /* Center horizontally */
   margin: 0 auto; /* To center the container */
   position: relative;
-  top: 10%;
   border-radius: 30px;
 }
 
@@ -475,9 +470,6 @@ a {
   color: pink;
 }
 
-
-
-
 // ==========================Blog=============================
 #blog{
   display: flex;
@@ -485,11 +477,9 @@ a {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   width: 100%;
   height: 100vh;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .blog-container{
