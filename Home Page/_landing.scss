@@ -243,7 +243,8 @@ span {
 }
 
 
-.see-more-button {
+.see-more-button,
+.see-less-button {
   background-color: var(--primary);
   color: white;
   border: none;
@@ -258,7 +259,8 @@ span {
   margin-bottom: 100px;
 }
 
-.see-more-button:hover {
+.see-more-button:hover,
+.see-less-button:hover  {
   background-color: var(--primary-dark);
 }
 // ===========================Section 3==============================

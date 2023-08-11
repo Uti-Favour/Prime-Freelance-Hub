@@ -131,11 +131,13 @@
         </div>
       </div>
       <button id="seeMoreButton" class="see-more-button">See More</button>
+      <button id="seeLessButton" class="see-less-button hidden">See Less</button>
     </section>
 
 
     <script>
-    const seeMoreButton = document.getElementById('seeMoreButton');
+   const seeMoreButton = document.getElementById('seeMoreButton');
+const seeLessButton = document.getElementById('seeLessButton');
 const categoryTiles = document.querySelectorAll('.section_2_categories_tile');
 const initialVisibleCount = 4;
 
@@ -147,6 +149,18 @@ seeMoreButton.addEventListener('click', () => {
   });
 
   seeMoreButton.style.display = 'none';
+  seeLessButton.style.display = 'block';
+});
+
+seeLessButton.addEventListener('click', () => {
+  categoryTiles.forEach((tile, index) => {
+    if (index >= initialVisibleCount) {
+      tile.classList.add('hidden');
+    }
+  });
+
+  seeMoreButton.style.display = 'block';
+  seeLessButton.style.display = 'none';
 });
 
 // Initial setup to hide category tiles on smaller devices
@@ -156,8 +170,11 @@ if (window.innerWidth <= 768) {
       tile.classList.add('hidden');
     }
   });
+
+  seeLessButton.style.display = 'none';
 } else {
   seeMoreButton.style.display = 'none';
+  seeLessButton.style.display = 'none';
 }
 
 
