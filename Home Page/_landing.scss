@@ -266,7 +266,7 @@ span {
 
 @media screen and (max-width: 768px) {
   .section_2_header{
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .section_2_header h3 {
     font-size: 30px;
@@ -352,7 +352,32 @@ a {
   height: 500px; /* Adjust the height as needed */
 }
 
-/* ===================Prime Video=============================== */
+/* Existing styles for larger devices */
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 0; /* Reset border-radius */
+  }
+  
+  .box-image,
+  .text-section {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .box-image {
+    order: -1; /* Change the order to place the image at the top */
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ===================Prime Image=============================== */
 
 .image-container {
   width: 90%;
