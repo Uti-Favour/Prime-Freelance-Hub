@@ -289,16 +289,15 @@ span {
 // ===========================Section 3==============================
 .box-container {
   width: 90%; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
   background-color: #14a800; /* Set your desired background color */
   display: flex;
   align-items: center;
   justify-content: center; /* Center horizontally */
   margin: 0 auto; /* To center the container */
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
   position: relative;
   top: 10%;
+  border-radius: 30px;
 }
 
 .text-section {
@@ -346,12 +345,17 @@ a {
   font-size: 15px;
 }
 .box-image {
-  height: 500px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
 }
 
 .box-img {
   width: 100%; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
+ border-top-right-radius: 50px;
+ border-bottom-right-radius: 50px;
+ border-top-left-radius: 30px;
+ border-bottom-left-radius: 30px;
+
 }
 
 /* Existing styles for larger devices */
@@ -361,8 +365,8 @@ a {
   .box-container {
     flex-direction: column;
     height: auto;
-    border-radius: 0; 
-    width: 100%;
+    border-radius: 30px; 
+    width: 90%;
   }
   
   .text-section {
@@ -379,6 +383,9 @@ a {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 30px;
   }
 
   .text-section h1{
