@@ -409,16 +409,16 @@ a {
 
 .image-container {
   width: 90%;
-  height: 600px;
   background-color: var(--fav-blue);
   display: flex;
-  align-items: flex-start; /* Change align-items to flex-start */
+  align-items: flex-start;
   justify-content: center;
   margin: 0 auto;
   border-radius: 30px;
   position: relative;
   margin-top: 10%;
 }
+
 
 .image-container .image {
   flex: 1;
@@ -434,13 +434,14 @@ a {
 
 .text-container {
   color: white;
+  flex: 1;
   flex-direction: column;
   margin-left: 20px;
   display: flex;
-  flex: 1;
-  align-self: flex-start; /* Add this line to align the text container to the top */
+  align-self: flex-start;
   margin-top: 80px;
 }
+
 .box-text h1{
   font-size: 50px;
 }
@@ -503,6 +504,14 @@ a {
     margin-left: 0;
     margin-top: 20px;
     align-self: center;
+  }
+
+  .text-container h1{
+    font-size: 40px;
+  }
+
+  .box-text-span{
+    font-size: 40px;
   }
 }
 
@@ -603,6 +612,7 @@ a {
   }
   #blog{
       padding:20px;
+      margin-top: 110%;
   }
 }
   
