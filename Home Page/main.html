@@ -35,7 +35,10 @@
       <button class="btn-header">Explore</button>
     </nav>
     <hr />
-    <!-- ====================Section 2======================= -->
+
+
+
+    <!-- ====================Skills Section======================= -->
 
     <section class="section_2 wrapper">
       <div class="section_2_header">
@@ -127,7 +130,38 @@
           </div>
         </div>
       </div>
+      <button id="seeMoreButton" class="see-more-button" style="color: green;">See More</button>
     </section>
+
+
+    <script>
+    const seeMoreButton = document.getElementById('seeMoreButton');
+const categoryTiles = document.querySelectorAll('.section_2_categories_tile');
+const initialVisibleCount = 4;
+
+seeMoreButton.addEventListener('click', () => {
+  categoryTiles.forEach((tile, index) => {
+    if (index >= initialVisibleCount) {
+      tile.classList.remove('hidden');
+    }
+  });
+
+  seeMoreButton.style.display = 'none';
+});
+
+// Initial setup to hide category tiles on smaller devices
+if (window.innerWidth <= 768) {
+  categoryTiles.forEach((tile, index) => {
+    if (index >= initialVisibleCount) {
+      tile.classList.add('hidden');
+    }
+  });
+} else {
+  seeMoreButton.style.display = 'none';
+}
+
+
+    </script>
 
     <!-- =======================Section 3======================================= -->
     <div class="box-container">
@@ -152,7 +186,7 @@
     <!-- ====================================Image Container========================= -->
     <div class="image-container">
       <div class="image">
-        <!-- <img src="Images/box-image.jpg" alt="Image Description" /> -->
+        <img src="Images/box-image.jpg" alt="Image Description" />
       </div>
 
       <div class="text-container">

@@ -133,7 +133,9 @@ hr {
 }
 
 
-/*Section 2 css start*/
+
+// ==========================Skills Section=======================
+
 .section_2 {
   font-size: 1.6rem;
   display: flex;
@@ -232,6 +234,12 @@ hr {
 }
 span {
   font-size: 63.5%;
+}
+
+
+
+.section_2_categories_tile.hidden {
+  display: none;
 }
 
 // ===========================Section 3==============================
