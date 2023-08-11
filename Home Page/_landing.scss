@@ -16,9 +16,9 @@
   --grey-light-2: #9aaa97;
   --grey-light-3: #e4ebe4;
   --white: #fff;
-  --blue: #1f57c3;
+  --fav-blue: blue;
   --blue-dark: #254d97;
-  --stone-pink: #a18085;
+  --choosen-pink: pink;
   --width: 1140px;
   --input-height: 40px;
   --input-radius: 20px;
@@ -205,7 +205,7 @@ span {
 .box-container {
   width: 90%; /* Adjust the width as needed */
   height: 600px; /* Adjust the height as needed */
-  background-color: #14a800; /* Set your desired background color */
+  background-color: var(--primary); /* Set your desired background color */
   display: flex;
   align-items: center;
   justify-content: center; /* Center horizontally */
@@ -252,7 +252,7 @@ button {
 }
 
 a {
-  color: green;
+  color: var(--primary);
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
   font-family: Arial, sans-serif;
@@ -321,7 +321,7 @@ a {
 .image-container {
   width: 90%;
   height: 600px;
-  background-color: rgb(31, 31, 226);
+  background-color: var(--fav-blue);
   display: flex;
   align-items: flex-start; /* Change align-items to flex-start */
   justify-content: center;
@@ -360,7 +360,7 @@ a {
 }
 .box-text-span{
   font-size: 50px;
-  color: pink;
+  color: var(--choosen-pink);
   font-style: italic;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -386,7 +386,7 @@ a {
   margin-right: 10px;
   margin-bottom: 2px; /* Example margin for spacing */
   font-size: 20px;
-  color: pink;
+  color: var(--choosen-pink);
 }
 
 // ==========================Blog=============================
@@ -431,7 +431,7 @@ a {
   border-top-right-radius: 30px;
 }
 .blog-text span{
-  color: green;
+  color: var(--primary);
   font-size: 0.9rem;
 }
 .blog-text h3{
@@ -461,7 +461,7 @@ a {
   flex-direction: column;
 }
 .blog-text a:hover{
-  color: blue;
+  color: var(--blue);
   transition: all ease 0.3s;
 }
 
