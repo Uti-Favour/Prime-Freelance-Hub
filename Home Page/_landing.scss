@@ -315,17 +315,16 @@ a {
 
 
 
-// =======================Services============================
-.service-container {
+/* =======================New Services============================ */
+.custom-service-container {
   width: 100%;
   height: 100vh;
   padding: 0 8%;
   background-color: #ffffff;
-  margin-top: 10%;
 }
 
-.service-container h1 {
-  margin-top: 150px;
+.custom-service-container h1 {
+  margin-top: 30px;
   text-align: center;
   padding-top: 10%;
   margin-bottom: 60px;
@@ -333,14 +332,14 @@ a {
   position: relative;
 }
 
-.service-container p {
+.custom-service-container p {
   line-height: 1.5;
   font-family: sans-serif;
 }
 
-.service-container h1::after {
+.custom-service-container h1::after {
   content: '';
-  background: #303ef7;
+  background: var(--primary);
   width: 100px;
   height: 5px;
   position: absolute;
@@ -349,17 +348,17 @@ a {
   transform: translateX(-50%);
 }
 
-.service-row {
+.custom-service-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
 }
 
-.service {
+.custom-service-box {
   text-align: left;
-  padding: 110px 30px; /* Increase the height of each service box */
+  padding: 110px 30px;
   border-radius: 5px;
-  font-size: 16px; /* Adjust the font size for h2 and p */
+  font-size: 16px;
   cursor: pointer;
   background-color: #f9f9f9;
   transition: transform 0.5s, box-shadow 0.5s;
@@ -367,35 +366,35 @@ a {
   border-radius: 30px;
 }
 
-.service i {
+.custom-icon {
   font-size: 40px;
   margin-bottom: 30px;
   color: var(--primary);
 }
 
-.service h2 {
+.custom-service-box h2 {
   margin-bottom: 20px;
-  font-size: 30px; /* Adjust the font size for h2 */
+  font-size: 30px;
   font-weight: 600;
 }
 
-.service p {
-  font-size: 14px; /* Adjust the font size for p */
+.custom-service-box p {
+  font-size: 14px;
   text-align: left;
   margin-top: 30px;
 }
 
-.service:hover {
+.custom-service-box:hover {
   background-color: #ffffff;
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.service:hover .learn {
+.custom-service-box:hover .custom-learn {
   color: #313de4;
 }
 
-.service .learn {
+.custom-service-box .custom-learn {
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -403,7 +402,6 @@ a {
   position: relative;
   top: 50px;
 }
-
 
 /* ===================Image container=============================== */
 
@@ -416,7 +414,7 @@ a {
   margin: 0 auto;
   border-radius: 30px;
   position: relative;
-  margin-top: 10%;
+  margin-top: 30%;
 }
 
 
@@ -501,6 +499,7 @@ a {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     padding: 30px; /* Add padding to the container */
+    margin-top: 210%;
   }
 
   .image-container .image {
