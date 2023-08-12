@@ -315,5 +315,78 @@ if (window.innerWidth <= 768) {
         </div>
     
     
+
+
+
+        <!-- ===================================Testimonial=================================== -->
+        <section class="testimonial-container">
+          <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+              <div class="slide swiper-slide">
+                <img src="Images/Peace Upwork.png" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="Images/drink.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="Images/look.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+                <i class="bx bxs-quote-alt-left quote-icon"></i>
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+       
+
+        <script>
+           var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+        </script>
+            <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
