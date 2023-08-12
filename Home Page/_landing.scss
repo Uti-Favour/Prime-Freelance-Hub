@@ -483,13 +483,11 @@ a {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     padding: 30px; /* Add padding to the container */
-    margin-top: 290%;
+    margin-top: 260%;
+    width: 90%;
+    border-radius: 30px;
   }
 
-  .image-container {
-    width: 100%;
-    border-radius: 0;
-  }
   .image {
     display: none; /* Hide the image container on smaller devices */
   }
