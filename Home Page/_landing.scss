@@ -233,7 +233,7 @@ p {
   font-style: italic;
 }
 
-button {
+.prime-btn {
   padding: 10px 20px;
   background-color: white;
   border: none;
@@ -426,7 +426,12 @@ a {
   margin-left: 20px;
   display: flex;
   align-self: flex-start;
-  margin-top: 80px;
+  margin-top: 90px;
+}
+
+
+.text-container h2{
+  margin-bottom: 20px;
 }
 
 .box-text h1 {
@@ -434,6 +439,7 @@ a {
 }
 .box-text p {
   font-size: 20px;
+  position: static;
 }
 .box-text-span {
   font-size: 50px;
@@ -465,18 +471,24 @@ a {
   color: var(--choosen-pink);
 }
 
-.button {
-  align-self: center;
+  
+.mentorship-btn{
+  align-self: flex-start;
   margin-top: 20px;
   font-family: Arial, sans-serif;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 16px;
   background-color: white;
-  color: var(--blue);
   border: none;
   border-radius: 30px;
   cursor: pointer;
+
+  a{
+    color: var(--fav-blue);
+  }
 }
+
+
 
 /* Media query for smaller devices */
 @media (max-width: 768px) {
@@ -498,6 +510,11 @@ a {
     margin-top: 20px;
     align-self: center;
   }
+
+  
+.text-container h2{
+  margin-bottom: 30px;
+}
 
   .text-container h1 {
     font-size: 40px;
@@ -539,18 +556,6 @@ a {
     margin-bottom: 19px;
   }
 
-  .button {
-    align-self: flex-start;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: white;
-    color: var(--blue);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-  }
 }
 
 // ==========================Blog=============================
