@@ -471,21 +471,23 @@ a {
   color: var(--choosen-pink);
 }
 
-  
-.mentorship-btn{
-  align-self: flex-start;
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
+
+.mentorship-btn {
   padding: 10px 20px;
-  font-size: 16px;
   background-color: white;
   border: none;
-  border-radius: 30px;
   cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-top: 5%;
+}
 
-  a{
-    color: var(--fav-blue);
-  }
+a {
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold */
+  font-family: Arial, sans-serif;
+  font-size: 15px;
 }
 
 
@@ -554,6 +556,24 @@ a {
 
   .list p {
     margin-bottom: 19px;
+  }
+
+  .mentorship-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 10%;
+  }
+  
+  a {
+    color: var(--blue-dark);
+    text-decoration: none;
+    font-weight: bold; /* Make the text bold */
+    font-family: Arial, sans-serif;
+    font-size: 15px;
   }
 
 }
