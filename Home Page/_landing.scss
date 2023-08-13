@@ -433,7 +433,7 @@ a {
   font-size: 50px;
 }
 .box-text p {
-  font-size: 25px;
+  font-size: 20px;
 }
 .box-text-span {
   font-size: 50px;
@@ -470,7 +470,7 @@ a {
   margin-top: 20px;
   font-family: Arial, sans-serif;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 17px;
   background-color: white;
   color: var(--blue);
   border: none;
@@ -490,7 +490,7 @@ a {
   }
 
   .image {
-    display: none; /* Hide the image container on smaller devices */
+    display: none;
   }
 
   .text-container {

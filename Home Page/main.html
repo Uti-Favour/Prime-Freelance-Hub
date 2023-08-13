@@ -220,8 +220,18 @@ if (window.innerWidth <= 768) {
           <h1>
             This is how 
             <span class="box-text-span">
-              good companies find prime talent.</span>
+             </span>
           </h1>
+
+          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+          <script>
+              var typed = new Typed(".box-text-span",{
+                  strings:["Talents get ahead in this modern world","Financial freedom begins fou you!","The world gets to see your talent.", " Good companies find prime talent."],
+                  typeSpeed:100,
+                  backSpeed:100,
+                  loop:true
+              })
+          </script>
           <p>
             Access the top 1% of talent on Upwork and a full suite of
             management tools. This is how innovation works now.
@@ -318,6 +328,6 @@ if (window.innerWidth <= 768) {
 
         
       <!-- ==================================NewsLetter=================================== -->
-      
+
   </body>
 </html>
