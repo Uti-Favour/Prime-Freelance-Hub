@@ -416,7 +416,7 @@ a {
   width: 600px;
   height: 550px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .text-container {
@@ -590,6 +590,26 @@ a {
   margin-top: 15%;
 }
 
+#blog h1{
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+#blog h1::after{
+  content: "";
+  background: var(--primary);
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .blog-container {
   display: flex;
   justify-content: center;
@@ -618,7 +638,7 @@ a {
   border-top-right-radius: 30px;
 }
 .blog-text span {
-  color: var(--blue);
+  color: var(--primary);
   font-size: 0.9rem;
 }
 .blog-text h3 {
