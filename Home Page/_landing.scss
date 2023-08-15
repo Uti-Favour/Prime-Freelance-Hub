@@ -55,7 +55,7 @@ html {
 .landing_text {
   font-family: sans-serif;
   margin-left: 90px;
-  margin-top: 50px;
+  margin-top: 8%;
 
   h1 {
     font-weight: 800;
@@ -164,22 +164,23 @@ html {
   display: block;
 }
 
-  /* Add the CSS animation */
-  .fade-in-out {
-    animation: fade 4s ease-in-out infinite;
-  }
+ /* Add the CSS animation */
+ .fade-in-out {
+  animation: fade 4s ease-in-out infinite;
+}
 
-  @keyframes fade {
-    0%, 100% {
-      opacity: 0;
-    }
-    15%, 85% {
-      opacity: 1;
-    }
-    90%, 100% {
-      opacity: 0;
-    }
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
   }
+  50%, 85% {
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+}
+
 
 
 
