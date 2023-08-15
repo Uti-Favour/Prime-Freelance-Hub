@@ -45,6 +45,144 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+// =======================landing====================
+
+.landing_page_section {
+  margin-top: 50px;
+}
+.landing_text {
+  font-family: sans-serif;
+  margin-left: 90px;
+  margin-top: 50px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+  p {
+    color: grey;
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+  .btn-1 {
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-top: 40px;
+  }
+  .btn-2 {
+    background-color: transparent;
+    color: black;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+  }
+}
+
+.Landing_Video {
+  position: absolute;
+  right: 90px;
+  height: auto;
+  width: 600px;
+  top: 140px;
+
+  .vid {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+  }
+}
+
+.section_1_bottom_left_companies_logo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+.section_1_bottom_left_companies_logo h4 {
+  color: var(--grey-light-2);
+  font-weight: 600;
+}
+
+.section_1_bottom_left_companies_logo div {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.section_1_bottom_left_companies_logo div img {
+  height: 40px;
+  max-height: 110px;
+  margin-right: 30px;
+  width: auto;
+}
+
+.section_1_bottom_left_companies_logo div img:nth-child(3) {
+  height: 26px;
+}
+
+.section_1_bottom_right {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: 99;
+}
+
+.section_1_bottom_right img {
+  width: 480px;
+}
+
+/* Add the new CSS class for hiding inactive carousel items */
+.carousel-item {
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
+
+  /* Add the CSS animation */
+  .fade-in-out {
+    animation: fade 4s ease-in-out infinite;
+  }
+
+  @keyframes fade {
+    0%, 100% {
+      opacity: 0;
+    }
+    15%, 85% {
+      opacity: 1;
+    }
+    90%, 100% {
+      opacity: 0;
+    }
+  }
+
+
+
 // ==========================Skills Section=======================
 
 .section_2 {
@@ -777,7 +915,6 @@ a {
     margin-top: 120%;
   }
 }
-
 
 
 
