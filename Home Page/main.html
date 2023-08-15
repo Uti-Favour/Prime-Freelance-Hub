@@ -18,95 +18,28 @@
 
   <body>
 
-<!-- ===========================Landing-Page======================= -->
-<div class="landing_page_section">
-  <div class="landing_text">
-    <div class="carousel-item active">
-      <h1>Prime Freelancing<br />Hub's Website!!!</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
-        Odit doloremque iste obcaecati quas recusandae molestiae<br />
-        beatae maiores eos minima optio.
-      </p>
-      <button class="btn-1">
-        <a href="#"> <i class="fas fa-paper-plane"></i> Explore All </a>
-      </button>
-      <button class="btn-2">
-        <a href="#"><i class="fas fa-arrow-right"></i> Learn More</a>
-      </button>
-    </div>
-    <div class="carousel-item">
-      <h1>Stay in touch with <br />latest courses.</h1>
-      <p>
-        At voluptate sit tenetur error saepe qui in, quam, expedita .<br />
-        Odit doloremque iste obcaecati quas recusandae molestiae<br />
-        beatae maiores eos minima optio.
-      </p>
-      <button class="btn-1">
-        <a href="#"> <i class="fas fa-paper-plane"></i> Explore All </a>
-      </button>
-      <button class="btn-2">
-        <a href="#"><i class="fas fa-arrow-right"></i> Learn More</a>
-      </button>
-    </div>
-    <div class="carousel-item">
-      <h1>Gain close Guide <br />on Freelancing.</h1>
-      <p>
-        Quos debitis tempore sit ea soluta ipsum voluptas adipisci.<br />
-        Odit doloremque iste obcaecati quas recusandae molestiae<br />
-        beatae maiores eos minima optio.
-      </p>
-      <button class="btn-1">
-        <a href="#"> <i class="fas fa-paper-plane"></i> Explore All </a>
-      </button>
-      <button class="btn-2">
-        <a href="#"><i class="fas fa-arrow-right"></i> Learn More</a>
-      </button>
+    <div class="parent-container">
+    <div class="main-container">
+      <div class="text-section">
+        <div class="text-content">
+          <h1>Welcome to Prime Freelance Hubs Website</h1>
+          <p class="custom-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Vel corporis nulla libero debitis, dicta suscipit est labore?
+              Temporibus, molestias ratione.</p>
+        </div>
+        <div class="button-group">
+          <button class="custom-button">Learn More</button>
+          <button class="custom-button">Contact Us</button>
+        </div>
+      </div>
+      <div class="video-section">
+        <video class="video" controls>
+          <source src="Videos/left-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </div>
-  
-  <div class="Landing_Video">
-    <video src="Videos/landing-video.mp4" class="vid" autoplay loop></video>
-  </div>
-  
-  <div class="section_1_bottom_left_companies_logo">
-    <h4 class="title-4">Trusted by</h4>
-    <div>
-      <img src="./assets/microsoft.svg" alt="" />
-      <img src="./assets/airbnb.svg" alt="" />
-      <img src="./assets/godaddy-black.svg" alt="" />
-      <img src="./assets/bissell.svg" alt="" />
-    </div>
-  </div>
-</div>
-
-<!-- Your existing JavaScript code (if any) -->
-
-<script src="your-existing-scripts.js"></script> <!-- Your existing JavaScript file -->
-<script>
-  const carouselItems = document.querySelectorAll('.carousel-item');
-  const landingText = document.querySelector('.landing_text');
-  
-  let currentSlideIndex = 0;
-
-  function showSlide(index) {
-    carouselItems.forEach(item => item.classList.remove('active'));
-    carouselItems[index].classList.add('active');
-    
-    landingText.classList.add('fade-in-out');
-    setTimeout(() => {
-      landingText.classList.remove('fade-in-out');
-    }, 3000); // Duration of the fade animation
-  }
-
-  function nextSlide() {
-    currentSlideIndex = (currentSlideIndex + 1) % carouselItems.length;
-    showSlide(currentSlideIndex);
-  }
-
-  showSlide(currentSlideIndex);
-  setInterval(nextSlide, 5000);
-</script>
 
     
     <!-- ====================Skills Section======================= -->
