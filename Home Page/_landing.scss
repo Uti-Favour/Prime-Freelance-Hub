@@ -690,6 +690,19 @@ a {
     height: 50px;
     margin: 5px;
   }
+
+  .user-text{
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .user-text p{
+    font-size: 18px;
+  }
+
+  .user-text .testimonial-span{
+    font-weight: 500;
+    font-size: 15px;
+  }
 }
 
 // ==========================Blog=============================
