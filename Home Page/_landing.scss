@@ -152,12 +152,13 @@ nav .fas{
   flex: 1;
   padding: 20px;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Vertically center items */
-  align-items: flex-start; /* Align items to the left */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally and vertically */
   margin-left: 5%;
   color: white;
 }
+
 
 h1 {
   font-size: 50px;
@@ -488,7 +489,7 @@ span {
 
 .image-container {
   width: 90%;
-  background-color: var(--fav-blue);
+  background-color: #008080 ;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -533,7 +534,7 @@ span {
 }
 .box-text-span {
   font-size: 50px;
-  color: var(--choosen-pink);
+  color:  #FFA07A;
   font-style: italic;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -558,7 +559,7 @@ span {
   margin-right: 10px;
   margin-bottom: 2px; /* Example margin for spacing */
   font-size: 20px;
-  color: var(--choosen-pink);
+  color:  #FFA07A;
 }
 
 
@@ -570,10 +571,11 @@ span {
   border-radius: 30px;
   border: 1px solid white;
   margin-top: 5%;
+  columns:  #FFA07A;
 }
 
 a {
-  color: var(--blue-dark);
+  color:  #FFA07A;
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
   font-family: Arial, sans-serif;
@@ -588,7 +590,7 @@ a {
     flex-direction: column;
     align-items: center; /* Center horizontally */
     padding: 30px; /* Add padding to the container */
-    margin-top: 230%;
+    margin-top: 220%;
     width: 90%;
     border-radius: 30px;
   }
@@ -641,7 +643,7 @@ a {
     margin-right: 10px;
     margin-bottom: 2px;
     font-size: 20px;
-    color: var(--choosen-pink);
+    color:  #FFA07A;
   }
 
   .list p {
@@ -659,7 +661,7 @@ a {
   }
   
   a {
-    color: var(--blue-dark);
+    color:  #FFA07A;
     text-decoration: none;
     font-weight: bold; /* Make the text bold */
     font-family: Arial, sans-serif;
@@ -674,7 +676,7 @@ a {
 
 .custom-image-container {
   width: 90%;
-  background-color: var(--fav-blue);
+  background-color:#1874CD ;  
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -719,7 +721,7 @@ a {
 }
 .custom-box-text-span {
   font-size: 50px;
-  color: var(--choosen-pink);
+  color: #87CEFA;
   font-style: italic;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -744,7 +746,7 @@ a {
   margin-right: 10px;
   margin-bottom: 2px; /* Example margin for spacing */
   font-size: 20px;
-  color: var(--choosen-pink);
+  color: #87CEFA;
 }
 
 
@@ -758,8 +760,8 @@ a {
   margin-top: 5%;
 }
 
-a {
-  color: var(--blue-dark);
+.main-a {
+  color:   #FFA07A;
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
   font-family: Arial, sans-serif;
@@ -844,8 +846,8 @@ a {
     margin-top: 10%;
   }
   
-  a {
-    color: var(--blue-dark);
+  .custom-a {
+    color:#87CEFA   ; 
     text-decoration: none;
     font-weight: bold; /* Make the text bold */
     font-family: Arial, sans-serif;

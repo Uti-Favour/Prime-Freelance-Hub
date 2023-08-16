@@ -1,497 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prime_Freelance_Hub</title>
-    <link rel="stylesheet" href="main.css" />
-    <script src="script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-
-  
-  <body>
-<div id="landing_page_section">
-<div class="navbar-container">
-  <nav>
-  <img src="Images/logo.png" alt="" class="logo">
-  <ul id="sidemenu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Mentorship</a></li>
-    <li><a href="Prime Academy/academy.html">Acadeny</a></li>
-    <li><a href="Prime Help-Desk/help-desk.html">Help Desk</a></li>
-    <i class="fas fa-times" onclick="closemenu()"></i>
-  </ul>
-  <i class="fas fa-bars" onclick="openmenu()"></i>
-</nav>
-</div>
-</div>
-
-<script>
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px";
-  }
-</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime_Freelance_Hub</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 
 
-    <!-- =======================Section 3======================================= -->
-
-
-    <div class="main-box-container">
-      <div class="box-container">
-        <div class="box-image">
-          <img src="Images/peace.jpg" alt="" class="box-img" />
-        </div>
-        <div class="text-section">
-          <h1>
-            This is how <span class="span-like"></span> work now in prime.
-          </h1>
-
-          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-          <script>
-              var typed = new Typed(".span-like",{
-                  strings:["Talents ","Experts","Companies", "Administrations "],
-                  typeSpeed:100,
-                  backSpeed:100,
-                  loop:true
-              })
-          </script>
-          <p>
-            Build an align workflow that moves faster than the
-            pace of business with Enterprise Suite.
-          </p>
-          <div>
-            <button class="prime-btn"><a href="" style="color: 
-            green;">Find out more</a></button>
-          </div>
-        </div>
-      </div>
+<body>
+  <div id="landing_page_section">
+    <div class="navbar-container">
+      <nav>
+        <img src="Images/logo.png" alt="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Mentorship</a></li>
+          <li><a href="Prime Academy/academy.html">Acadeny</a></li>
+          <li><a href="Prime Help-Desk/help-desk.html">Help Desk</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
     </div>
-      
-  
-  
-    <!-- ====================Skills Section======================= -->
+  </div>
 
-    <section class="section_2 wrapper">
-      <div class="section_2_header">
-        <h3>It can be any talent you have!</h3>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+
+
+  <!-- =======================Section 3======================================= -->
+
+
+  <div class="main-box-container">
+    <div class="box-container">
+      <div class="box-image">
+        <img src="Images/peace.jpg" alt="" class="box-img" />
+      </div>
+      <div class="text-section">
+        <h1>
+          This is how <span class="span-like"></span> work now in prime.
+        </h1>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".span-like", {
+            strings: ["Talents ", "Experts", "Companies", "Administrations "],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+          })
+        </script>
+        <p>
+          Build an align workflow that moves faster than the
+          pace of business with Enterprise Suite.
+        </p>
         <div>
-          <p>Looking for work?</p>
+          <button class="prime-btn"><a href="" style="color: 
+            green;">Find out more</a></button>
         </div>
       </div>
-      <div class="section_2_categories">
-        <div class="section_2_categories_tile">
-          <h4>Programming</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 7,853 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Development & IT</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 6,500 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Voice Over</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 2,120 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Virtual Assitant</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 4,200 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>UI/UX Designer</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 3,860 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Video Editor</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 2,853 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Product Manager</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 4,500 skills </span>
-          </div>
-        </div>
-        <div class="section_2_categories_tile">
-          <h4>Content Writing</h4>
-          <div>
-            <span>
-              <img src="./assets/star.svg" alt="star" />
-              4.85/5
-            </span>
-            <span> 5,000 skills </span>
-          </div>
-        </div>
-      </div>
-      <button id="seeMoreButton" class="see-more-button">See More</button>
-      <button id="seeLessButton" class="see-less-button hidden">See Less</button>
-    </section>
-
-
-    <script>
-   const seeMoreButton = document.getElementById('seeMoreButton');
-const seeLessButton = document.getElementById('seeLessButton');
-const categoryTiles = document.querySelectorAll('.section_2_categories_tile');
-const initialVisibleCount = 3;
-
-seeMoreButton.addEventListener('click', () => {
-  categoryTiles.forEach((tile, index) => {
-    if (index >= initialVisibleCount) {
-      tile.classList.remove('hidden');
-    }
-  });
-
-  seeMoreButton.style.display = 'none';
-  seeLessButton.style.display = 'block';
-});
-
-seeLessButton.addEventListener('click', () => {
-  categoryTiles.forEach((tile, index) => {
-    if (index >= initialVisibleCount) {
-      tile.classList.add('hidden');
-    }
-  });
-
-  seeMoreButton.style.display = 'block';
-  seeLessButton.style.display = 'none';
-});
-
-// Initial setup to hide category tiles on smaller devices
-if (window.innerWidth <= 768) {
-  categoryTiles.forEach((tile, index) => {
-    if (index >= initialVisibleCount) {
-      tile.classList.add('hidden');
-    }
-  });
-
-  seeLessButton.style.display = 'none';
-} else {
-  seeMoreButton.style.display = 'none';
-  seeLessButton.style.display = 'none';
-}
-
-
-    </script>
-
-
-   <!-- ===============================New Services Page========================================== -->
-
-<div class="custom-service-container">
-  <h1> Services</h1>
-  <div class="custom-service-row">
-    <div class="custom-service-box">
-      <i class="custom-icon fas fa-lightbulb"></i>
-      <h2>Get Coinbase share CFDs*</h2>
-      <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur adipisicingLorem</p>
-      <a href="#" class="custom-learn">Learn More</a>
-    </div>
-    <div class="custom-service-box">
-      <i class="custom-icon fas fa-money-bill"></i>
-      <h2>MetaTrader platform and mobile app</h2>
-      <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur adipisicingLorem</p>
-      <a href="#" class="custom-learn">Learn More</a>
-    </div>
-    <div class="custom-service-box">
-      <i class="custom-icon fas fa-handshake"></i>
-      <h2>Account features and benefits</h2>
-      <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur adipisicingLorem </p>
-      <a href="#" class="custom-learn">Learn More</a>
     </div>
   </div>
-</div>
 
-  
-    <!-- ====================================Image Container========================= -->
-    <div class="image-container">
-      <div class="image">
-        <img src="Images/Section 3 img.jpg" alt="Image Description" />
+
+
+  <!-- ====================Skills Section======================= -->
+
+  <section class="section_2 wrapper">
+    <div class="section_2_header">
+      <h3>It can be any talent you have!</h3>
+      <div>
+        <p>Looking for work?</p>
       </div>
-
-      <div class="text-container">
-        <h2>For Mentorship</h2>
-        <div class="box-text">
-          <h1>
-            This is how 
-            <span class="box-text-span">
-             </span>
-          </h1>
-
-          <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-          <script>
-              var typed = new Typed(".box-text-span",{
-                  strings:["Talents get ahead in this modern world.","Financial freedom begins fou you!","The world gets to see your talent.", " Good companies find prime talent."],
-                  typeSpeed:100,
-                  backSpeed:100,
-                  loop:true
-              })
-          </script>
-          <p>
-            Access the top 1% of talent on Upwork and a full suite of
-            management tools. This is how innovation works now.
-          </p>
-
-          <div class="list">
-            <ul>
-              <p>
-                <i class="fas fa-star"></i> Access prime talent to fill your
-                talent gap
-              </p>
-              <p>
-                <i class="fas fa-check"></i> Control your workflow, classify and
-                pay talents
-              </p>
-              <p>
-                <i class="fas fa-hands-helping"></i> Partner with prime
-                freelance for end-to-end support
-              </p>
-            </ul>
-
-
-            <button  class="mentorship-btn"> <a href="Mentorship/mentorship.html">Learn More</a></button>
-          </div>
-          
+    </div>
+    <div class="section_2_categories">
+      <div class="section_2_categories_tile">
+        <h4>Programming</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 7,853 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Development & IT</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 6,500 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Voice Over</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 2,120 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Virtual Assitant</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 4,200 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>UI/UX Designer</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 3,860 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Video Editor</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 2,853 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Product Manager</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 4,500 skills </span>
+        </div>
+      </div>
+      <div class="section_2_categories_tile">
+        <h4>Content Writing</h4>
+        <div>
+          <span>
+            <img src="./assets/star.svg" alt="star" />
+            4.85/5
+          </span>
+          <span> 5,000 skills </span>
         </div>
       </div>
     </div>
+    <button id="seeMoreButton" class="see-more-button">See More</button>
+    <button id="seeLessButton" class="see-less-button hidden">See Less</button>
+  </section>
 
 
+  <script>
+    const seeMoreButton = document.getElementById('seeMoreButton');
+    const seeLessButton = document.getElementById('seeLessButton');
+    const categoryTiles = document.querySelectorAll('.section_2_categories_tile');
+    const initialVisibleCount = 3;
 
-    
+    seeMoreButton.addEventListener('click', () => {
+      categoryTiles.forEach((tile, index) => {
+        if (index >= initialVisibleCount) {
+          tile.classList.remove('hidden');
+        }
+      });
+
+      seeMoreButton.style.display = 'none';
+      seeLessButton.style.display = 'block';
+    });
+
+    seeLessButton.addEventListener('click', () => {
+      categoryTiles.forEach((tile, index) => {
+        if (index >= initialVisibleCount) {
+          tile.classList.add('hidden');
+        }
+      });
+
+      seeMoreButton.style.display = 'block';
+      seeLessButton.style.display = 'none';
+    });
+
+    // Initial setup to hide category tiles on smaller devices
+    if (window.innerWidth <= 768) {
+      categoryTiles.forEach((tile, index) => {
+        if (index >= initialVisibleCount) {
+          tile.classList.add('hidden');
+        }
+      });
+
+      seeLessButton.style.display = 'none';
+    } else {
+      seeMoreButton.style.display = 'none';
+      seeLessButton.style.display = 'none';
+    }
 
 
-    <!-- ====================================Image Container========================= -->
-    <div class="custom-image-container">
-      <div class="custom-image">
-        <img src="Images/test-1.jpg" alt="Image Description" />
+  </script>
+
+
+  <!-- ===============================New Services Page========================================== -->
+
+  <div class="custom-service-container">
+    <h1> Services</h1>
+    <div class="custom-service-row">
+      <div class="custom-service-box">
+        <i class="custom-icon fas fa-lightbulb"></i>
+        <h2>Get Coinbase share CFDs*</h2>
+        <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur
+          adipisicingLorem</p>
+        <a href="#" class="custom-learn">Learn More</a>
       </div>
-
-      <div class="custom-text-container">
-        <h2>For Mentorship</h2>
-        <div class="custom-box-text">
-          <h1>
-            This is how  
-            <span class="custom-box-text-span">Talents get ahead in this modern world.
-             </span>
-          </h1>
-          <p>
-            Access the top 1% of talent on Upwork and a full suite of
-            management tools. This is how innovation works now.
-          </p>
-
-          <div class="custom-list">
-            <ul>
-              <p>
-                <i class="fas fa-star"></i> Access prime talent to fill your
-                talent gap
-              </p>
-              <p>
-                <i class="fas fa-check"></i> Control your workflow, classify and
-                pay talents
-              </p>
-              <p>
-                <i class="fas fa-hands-helping"></i> Partner with prime
-                freelance for end-to-end support
-              </p>
-            </ul>
-
-
-            <button  class="custom-mentorship-btn"> <a href="Mentorship/mentorship.html">Learn More</a></button>
-          </div>
-          
-        </div>
+      <div class="custom-service-box">
+        <i class="custom-icon fas fa-money-bill"></i>
+        <h2>MetaTrader platform and mobile app</h2>
+        <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur
+          adipisicingLorem</p>
+        <a href="#" class="custom-learn">Learn More</a>
+      </div>
+      <div class="custom-service-box">
+        <i class="custom-icon fas fa-handshake"></i>
+        <h2>Account features and benefits</h2>
+        <p>Lorem adipisicing.Lorem ipsum dolor sit amet consectetur adipisicingLorem ipsum dolor sit amet consectetur
+          adipisicingLorem </p>
+        <a href="#" class="custom-learn">Learn More</a>
       </div>
     </div>
+  </div>
+
+
+  <!-- ====================================Image Container========================= -->
+  <div class="image-container">
+    <div class="image">
+      <img src="Images/Section 3 img.jpg" alt="Image Description" />
+    </div>
+
+    <div class="text-container">
+      <h2>For Mentorship</h2>
+      <div class="box-text">
+        <h1>
+          This is how
+          <span class="box-text-span">Financial freedom begins fou you!
+          </span>
+        </h1>
+        <p>
+          Access the top 1% of talent on Upwork and a full suite of
+          management tools. This is how innovation works now.
+        </p>
+
+        <div class="list">
+          <ul>
+            <p>
+              <i class="fas fa-star"></i> Access prime talent to fill your
+              talent gap
+            </p>
+            <p>
+              <i class="fas fa-check"></i> Control your workflow, classify and
+              pay talents
+            </p>
+            <p>
+              <i class="fas fa-hands-helping"></i> Partner with prime
+              freelance for end-to-end support
+            </p>
+          </ul>
+
+
+          <button class="mentorship-btn"> <a href="Mentorship/mentorship.html" class="main-a">Learn More</a></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
-    
 
-    <!-- ===========================Testimonial Section======================= -->
-<div class="testimonial-container">
-  <div class="testimonial">
-    <div class="testimonial-text">
-      <div class="user-text">
-        <i class="fas fa-quote-left"></i>
-        <p>Prime Freelance Agency has been a game-changer for my freelancing career. 
-          Their platform's simplicity and efficiency have made finding projects
-           The range of opportunities they offer matches my skills perfectly, allowing 
-           me to excel in what I do best.</p>
-             <span class="testimonial-span">UTI ABUNDANCE , CEO MUSIK SCHOOL</span>
+
+
+  <!-- ====================================Image Container========================= -->
+  <div class="custom-image-container">
+    <div class="custom-image">
+      <img src="Images/test-1.jpg" alt="Image Description" />
+    </div>
+
+    <div class="custom-text-container">
+      <h2>For Academy</h2>
+      <div class="custom-box-text">
+        <h1>
+          This is how
+          <span class="custom-box-text-span">Talents get ahead in this modern world.
+          </span>
+        </h1>
+        <p>
+          Access the top 1% of talent on Upwork and a full suite of
+          management tools. This is how innovation works now.
+        </p>
+
+        <div class="custom-list">
+          <ul>
+            <p>
+              <i class="fas fa-star"></i> Access prime talent to fill your
+              talent gap
+            </p>
+            <p>
+              <i class="fas fa-check"></i> Control your workflow, classify and
+              pay talents
+            </p>
+            <p>
+              <i class="fas fa-hands-helping"></i> Partner with prime
+              freelance for end-to-end support
+            </p>
+          </ul>
+
+
+          <button class="custom-mentorship-btn"> <a href="Mentorship/mentorship.html" class="custom-a">Learn More</a></button>
+        </div>
+
       </div>
-      <div class="user-text active-text">
-        <i class="fas fa-quote-left"></i>
-        <p>I highly recommend Prime Freelance Agency to any freelancer looking for a
-           platform that understands our needs and fosters growth.
-           Thank you for making freelancing a fulfilling and reliable endeavor.</p>
-             <span class="testimonial-span">UTI OGE, CEO POWERFUL TEENS</span>
-      </div>
-      <div class="user-text">
-        <i class="fas fa-quote-left"></i>
-        <p>What I appreciate most is their dedication to fairness and transparency. 
-          Collaborations are smooth, and I've never encountered any payment issues.
-           It's reassuring to work on a platform that values both freelancers and clients.</p>
-             <span class="testimonial-span">PST OYEKA , CEO INGATHERING</span>
-      </div>
-      <div class="user-text">
-        <i class="fas fa-quote-left"></i>
-        <p>The support from the Prime Freelance team is outstanding.
-           They're responsive and ready to assist whenever needed, 
-           making my experience even more positive.</p>
-             <span class="testimonial-span">UTI ANDREW , CEO QUANTUM LEAP</span>
-      </div>
-      <div class="user-text">
-        <i class="fas fa-quote-left"></i>
-        <p>The variety of projects available on their platform is truly impressive.
-           I've had the opportunity to work on diverse projects that match my skills
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ===========================Testimonial Section======================= -->
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <div class="testimonial-text">
+        <div class="user-text">
+          <i class="fas fa-quote-left"></i>
+          <p>Prime Freelance Agency has been a game-changer for my freelancing career.
+            Their platform's simplicity and efficiency have made finding projects
+            The range of opportunities they offer matches my skills perfectly, allowing
+            me to excel in what I do best.</p>
+          <span class="testimonial-span">UTI ABUNDANCE , CEO MUSIK SCHOOL</span>
+        </div>
+        <div class="user-text active-text">
+          <i class="fas fa-quote-left"></i>
+          <p>I highly recommend Prime Freelance Agency to any freelancer looking for a
+            platform that understands our needs and fosters growth.
+            Thank you for making freelancing a fulfilling and reliable endeavor.</p>
+          <span class="testimonial-span">UTI OGE, CEO POWERFUL TEENS</span>
+        </div>
+        <div class="user-text">
+          <i class="fas fa-quote-left"></i>
+          <p>What I appreciate most is their dedication to fairness and transparency.
+            Collaborations are smooth, and I've never encountered any payment issues.
+            It's reassuring to work on a platform that values both freelancers and clients.</p>
+          <span class="testimonial-span">PST OYEKA , CEO INGATHERING</span>
+        </div>
+        <div class="user-text">
+          <i class="fas fa-quote-left"></i>
+          <p>The support from the Prime Freelance team is outstanding.
+            They're responsive and ready to assist whenever needed,
+            making my experience even more positive.</p>
+          <span class="testimonial-span">UTI ANDREW , CEO QUANTUM LEAP</span>
+        </div>
+        <div class="user-text">
+          <i class="fas fa-quote-left"></i>
+          <p>The variety of projects available on their platform is truly impressive.
+            I've had the opportunity to work on diverse projects that match my skills
             and interests, allowing me to grow professionally while doing what I love.</p>
-             <span class="testimonial-span">UTI FAVOUR , CEO TECH MAESTROS</span>
+          <span class="testimonial-span">UTI FAVOUR , CEO TECH MAESTROS</span>
+        </div>
+      </div>
+
+      <div class="testimonial-pic">
+        <img src="Images/peace.jpg" class="user-pic" onclick="showReview()">
+        <img src="Images/look.jpg" class="user-pic active-pic" onclick="showReview()">
+        <img src="Images/pexels-spencer-davis-4392993.jpg" class="user-pic" onclick="showReview()">
+        <img src="Images//tesi-2.jpg" class="user-pic" onclick="showReview()">
+        <img src="Images/test-1.jpg" class="user-pic" onclick="showReview()">
       </div>
     </div>
-    
-    <div class="testimonial-pic">
-      <img src="Images/peace.jpg" class="user-pic" onclick="showReview()">
-      <img src="Images/look.jpg" class="user-pic active-pic" onclick="showReview()">
-      <img src="Images/pexels-spencer-davis-4392993.jpg" class="user-pic" onclick="showReview()">
-      <img src="Images//tesi-2.jpg" class="user-pic" onclick="showReview()">
-      <img src="Images/test-1.jpg" class="user-pic" onclick="showReview()">
-    </div>
   </div>
-</div>
 
-<script>
-  let userTexts = document.getElementsByClassName("user-text");
-  let userPics = document.getElementsByClassName("user-pic");
+  <script>
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
 
-  function showReview(){
-    for (userPic of userPics){
-      userPic.classList.remove("active-pic");
+    function showReview() {
+      for (userPic of userPics) {
+        userPic.classList.remove("active-pic");
+      }
+
+      for (userText of userTexts) {
+        userText.classList.remove("active-text");
+      }
+
+      let i = Array.from(userPics).indexOf(event.target);
+
+      userPics[i].classList.add("active-pic");
+      userTexts[i].classList.add("active-text");
     }
+  </script>
+  <!-- ======================Blog Section================================== -->
+  <section id="blog">
+    <h1>Prime Blog</h1>
+    <!--container---------------->
+    <div class="blog-container">
 
-    for(userText of userTexts){
-      userText.classList.remove("active-text");
-    }
+      <!--box-1------------->
+      <div class="blog-box">
 
-    let i = Array.from(userPics).indexOf(event.target);
-
-    userPics[i].classList.add("active-pic");
-    userTexts[i].classList.add("active-text");
-  }
-</script>
-    <!-- ======================Blog Section================================== -->
-    <section id="blog">
-      <h1>Prime Blog</h1>
-      <!--container---------------->
-      <div class="blog-container">
-    
-        <!--box-1------------->
-        <div class="blog-box">
-    
-          <!--img---->
-          <div class="blog-img">
-            <img src="Images/drink.jpg" alt="blog">
-          </div>
-          <!--text--->
-          <div class="blog-text">
-            <span>18 July 2021 / Web Design</span>
-            <h3>What Has Happened to All of the Web Design Ideas?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-            <h5>Read More</h5>
-          </div>
-    
+        <!--img---->
+        <div class="blog-img">
+          <img src="Images/drink.jpg" alt="blog">
         </div>
-    
-    
-    
-    
-        <!--box-2------------->
-        <div class="blog-box">
-    
-          <!--img---->
-          <div class="blog-img">
-            <img src="Images/look.jpg" alt="blog">
-          </div>
-          <!--text--->
-          <div class="blog-text">
-            <span>18 July 2021 / Web Design</span>
-            <h3>What Has Happened to All of the Web Design Ideas?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-            <h5>Read More</h5>
-          </div>
-    
-        </div>
-    
-    
-    
-    
-        <!--box-3------------->
-        <div class="blog-box">
-    
-          <!--img---->
-          <div class="blog-img">
-            <img src="Images/pexels-spencer-davis-4392993.jpg" alt="blog">
-          </div>
-          <!--text--->
-          <div class="blog-text">
-            <span>18 July 2021 / Web Design</span>
-            <h3>What Has Happened to All of the Web Design Ideas?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum distinctio minima voluptate quae?</p>
-            <h5>Read More</h5>
-          </div>
-    
+        <!--text--->
+        <div class="blog-text">
+          <span>18 July 2021 / Web Design</span>
+          <h3>What Has Happened to All of the Web Design Ideas?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis
+            perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum
+            distinctio minima voluptate quae?</p>
+          <h5>Read More</h5>
         </div>
 
-        
-  </body>
+      </div>
+
+
+
+
+      <!--box-2------------->
+      <div class="blog-box">
+
+        <!--img---->
+        <div class="blog-img">
+          <img src="Images/look.jpg" alt="blog">
+        </div>
+        <!--text--->
+        <div class="blog-text">
+          <span>18 July 2021 / Web Design</span>
+          <h3>What Has Happened to All of the Web Design Ideas?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis
+            perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum
+            distinctio minima voluptate quae?</p>
+          <h5>Read More</h5>
+        </div>
+
+      </div>
+
+
+
+
+      <!--box-3------------->
+      <div class="blog-box">
+
+        <!--img---->
+        <div class="blog-img">
+          <img src="Images/pexels-spencer-davis-4392993.jpg" alt="blog">
+        </div>
+        <!--text--->
+        <div class="blog-text">
+          <span>18 July 2021 / Web Design</span>
+          <h3>What Has Happened to All of the Web Design Ideas?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis modi veritatis adipisci omnis
+            perferendis deleniti tempore quasi? Explicabo recusandae soluta vel cum perspiciatis consequuntur dolorum
+            distinctio minima voluptate quae?</p>
+          <h5>Read More</h5>
+        </div>
+
+      </div>
+
+
+</body>
+
 </html>
