@@ -111,6 +111,7 @@
     align-items: center;
     padding: 20px; /* Add padding to create space */
     margin-top: 80px;
+    display: none;
   }
   
   .why_prime_mentorship_content {
@@ -162,7 +163,7 @@
       }
       p {
         margin-top: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         font-size: 15px;
       }
     }
@@ -209,20 +210,23 @@
 
 
   /* Media Query for Tablet and Larger Screens */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .why_prime_mentorship_main_container {
     flex-direction: column; /* Revert to row layout */
     width: 100%;
+    display: block;
   }
 
   .mentorship_video {
     max-width: 100%; /* Adjust as needed */
     margin-right: 20px; /* Create space between video and text */
+    width: 100%;
   }
 }
 .why_prime_mentorship_content {
   /* Existing styles... */
   flex-direction: column; /* Switch to column layout for mobile */
+  display: block;
 }
 
 .mentorship_video {
@@ -258,10 +262,44 @@
   }
 
   p{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   i{
     color: green;
   }
 
+}
+
+
+
+
+// ==============================What's Prime Mentorship=====================
+
+#why_prime_mentorship_info{
+  width: 100%;
+  height: 50vh;
+  margin-top: 230px;
+}
+.img-1{
+  width: 480px;
+  border-top-left-radius: 40px;
+}
+.text-2{
+  float: right;
+  text-align: left;
+}
+.text-2 h2{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+
+.text-2 p{
+  margin-top: 20px;
+  line-height: 25px;
+  color: gray;
+  margin-right: 50px;
 }
