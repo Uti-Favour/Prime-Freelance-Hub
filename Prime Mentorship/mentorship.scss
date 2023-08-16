@@ -103,4 +103,49 @@
   
 
   // ====================================Why Prime==============================================
+  .why_prime_mentorship_main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding to create space */
+    margin-top: 80px;
+  }
+  
+  .why_prime_mentorship_content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .mentorship_video {
+    flex: 1;
+    max-width: 50%; /* Adjust as needed */
+    margin-right: 20px; /* Create space between video and text */
+    video {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+  
+  .text_container {
+    flex: 1;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; /* Remove default margin */
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Add space between list items */
+        i {
+          margin-right: 10px;
+        }
+      }
+      p {
+        margin: 0; /* Remove default margin */
+      }
+    }
+  }
   
