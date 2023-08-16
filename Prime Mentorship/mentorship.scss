@@ -104,6 +104,8 @@
 
   // ====================================Why Prime==============================================
   .why_prime_mentorship_main_container {
+    width: 90%; /* Set your desired width */
+    margin: 0 auto; /* Center the container horizontally */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,18 +125,33 @@
     margin-right: 20px; /* Create space between video and text */
     video {
       width: 100%;
-      height: auto;
+      height: 350px;
       max-width: 100%;
-      border-radius: 20px;
+      border-radius: 10px;
+      object-fit: cover;
     }
   }
   
   .text_container {
     flex: 1;
+    margin-left: 20px;
+
+
+    h1{
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 45px;
+    }
     ul {
       list-style: none;
       padding: 0;
       margin: 0; /* Remove default margin */
+      margin-top: 25px;
+ 
+
+      h2{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: 'Roboto', sans-serif;
+      }
       li {
         display: flex;
         align-items: center;
@@ -144,8 +161,40 @@
         }
       }
       p {
-        margin: 0; /* Remove default margin */
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 15px;
       }
+    }
+
+    .buttons-container {
+      display: flex;
+      margin-top: 20px; // Adjust as needed
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    .button-1 {
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 30px ;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .button-2{
+      padding: 10px 20px;
+      color: black;
+      border: none;
+      border-radius: 30px ;
+      cursor: pointer;
+      margin-left: 20px;
+      border: 2px solid black;
+      font-size: 16px;
+      font-weight: 500;
+      background: transparent;
     }
   }
   
