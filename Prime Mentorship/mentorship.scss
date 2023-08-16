@@ -125,7 +125,7 @@
     margin-right: 20px; /* Create space between video and text */
     video {
       width: 100%;
-      height: 350px;
+      height: auto;
       max-width: 100%;
       border-radius: 10px;
       object-fit: cover;
@@ -134,7 +134,7 @@
   
   .text_container {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 0;
 
 
     h1{
@@ -167,6 +167,11 @@
       }
     }
 
+
+    .free{
+      color: green;
+      font-style: italic;
+    }
     .buttons-container {
       display: flex;
       margin-top: 20px; // Adjust as needed
@@ -176,7 +181,7 @@
   
     .button-1 {
       padding: 10px 15px;
-      background-color: black;
+      background-color: green;
       color: white;
       border: none;
       border-radius: 30px ;
@@ -197,4 +202,66 @@
       background: transparent;
     }
   }
+
+ 
   
+
+
+
+  /* Media Query for Tablet and Larger Screens */
+@media screen and (min-width: 768px) {
+  .why_prime_mentorship_main_container {
+    flex-direction: column; /* Revert to row layout */
+    width: 100%;
+  }
+
+  .mentorship_video {
+    max-width: 100%; /* Adjust as needed */
+    margin-right: 20px; /* Create space between video and text */
+  }
+}
+.why_prime_mentorship_content {
+  /* Existing styles... */
+  flex-direction: column; /* Switch to column layout for mobile */
+}
+
+.mentorship_video {
+  /* Existing styles... */
+  max-width: 100%; /* Take full width on mobile */
+  margin-right: 0; /* No margin on mobile */
+  video {
+    /* Existing styles... */
+    height: auto; /* Allow video to adjust its height */
+    width: 100%;
+  }
+}
+
+.text_container {
+  /* Existing styles... */
+  margin-left: 0; /* No margin on mobile */
+
+  ul{
+    h2{
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+    }
+  }
+
+  .button-1{
+    padding: 10px 100px;
+    margin-top: 20px;
+  }
+
+  .button-2{
+    display: none;
+  }
+
+  p{
+    margin-bottom: 30px;
+  }
+  i{
+    color: green;
+  }
+
+}
