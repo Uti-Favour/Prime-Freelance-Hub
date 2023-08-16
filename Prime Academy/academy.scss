@@ -1,6 +1,99 @@
-*{
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
+  }
+  
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar-container{
+    padding: 10px 10%;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  
+  .logo{
+    width: 140px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  
+  }
+  nav ul li a:hover::after{
+  width: 100%;
+  }
+  
+  
+  nav .fas{
+    display: none;
+  }
+  
+  @media only  screen and (max-width:600px) {
+    nav .fas{
+      display: block;
+      font-size: 25px;
+    }
+  
+    nav ul {
+      background: blue;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s;
+    }
+  
+    nav ul li{
+      display: block;
+      margin: 25px;
+    }
+  
+    nav ul .fas{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+  }

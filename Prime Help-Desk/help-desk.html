@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Help Desk</title>
+    <link rel="stylesheet" href="help-desk.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
-    
+    <div id="landing_page_section">
+        <div class="navbar-container">
+          <nav>
+          <img src="Images/logo.png" alt="" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Mentorship</a></li>
+            <li><a href="#">Acadeny</a></li>
+            <li><a href="#">Contact us</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        </div>
+        </div>
+        
+        <script>
+          var sidemenu = document.getElementById("sidemenu");
+        
+          function openmenu(){
+            sidemenu.style.right = "0";
+          }
+          function closemenu(){
+            sidemenu.style.right = "-200px";
+          }
+        </script>
 </body>
 </html>
