@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+iframe {
+    width: 100%; /* Adjust the width as needed */
+    height: 800px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide the scrollbar */
+  }
