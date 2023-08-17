@@ -273,14 +273,16 @@
 
 // ==============================What's Prime Mentorship=====================
 
-
-
 .mentorship-section {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 50px 0; /* Removed horizontal padding */
   flex-direction: row; /* Default direction: row */
+  width: 95%;
+  justify-content: center;
+  margin: 0 auto;
 }
+
 .text-content {
   flex: 1;
 }
@@ -297,6 +299,7 @@
   line-height: 1.6;
   margin-bottom: 20px;
   color: #444444;
+  width: 90%;
 }
 
 .buttons {
@@ -345,20 +348,20 @@ margin-left: 5px;
   .mentorship-section {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align items */
+    width: 90%;
   }
 
   .text-content {
     flex: 1;
-    padding-right: 20px;
   }
   
   .text-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    width: 700;
   }
   
   .text-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 20px;
     color: #444444;
@@ -379,12 +382,13 @@ margin-left: 5px;
   .image-container {
     flex: 1;
     text-align: center;
-    margin-top: auto; /* Push the image to the bottom */
+    margin-top: 10%; /* Push the image to the bottom */
   }
   
   .image-container img {
     max-width: 100%;
     height: auto;
+    width: 100%;
   }
   
 }
