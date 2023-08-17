@@ -469,7 +469,6 @@ margin-left: 5px;
 
   .second-text-content {
     flex: 1;
-    margin-left: 50px;
   }
   
   .second-text-content h2 {
@@ -489,13 +488,6 @@ margin-left: 5px;
     gap: 10px;
   }
   
- .buttons .button{
-    padding: 10px 20px;
-    background-color:  #FFA07A;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
   .second-image-container {
     flex: 1;
     text-align: center;
@@ -507,6 +499,76 @@ margin-left: 5px;
     height: auto;
   }
   
+}
+
+
+
+// =======================How to get Started===========================
+.row_container{
+  padding-top: 10%;
+}
+
+
+.rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.services {
+  text-align: left;
+  padding: 70px 30px; /* Increase the height of each service box */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust the font size for h2 and p */
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+
+  
+}
+
+.services i {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #408040;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  font-size: 30px; /* Adjust the font size for h2 */
+  font-weight: 600;
+}
+
+.services p {
+  font-size: 14px; /* Adjust the font size for p */
+  text-align: left;
+  margin-top: 30px;
+  color: rgb(37, 36, 36);
+  line-height: 20px;
+}
+
+.services:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-step{
+  color: black;
+  text-decoration: none;
+  position: relative;
+  top: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.btn-step:hover{
+  font-weight: 600;
 }
 
 
