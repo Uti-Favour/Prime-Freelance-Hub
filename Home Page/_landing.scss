@@ -488,7 +488,7 @@ span {
 /* ===================Image container=============================== */
 
 .image-container {
-  width: 90%;
+  width: 95%;
   background-color: #008080 ;
   display: flex;
   align-items: flex-start;
@@ -575,7 +575,7 @@ span {
 }
 
 a {
-  color:  #FFA07A;
+  color:  #1874CD ;
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
   font-family: Arial, sans-serif;
@@ -661,7 +661,7 @@ a {
   }
   
   a {
-    color:  #FFA07A;
+    color:  #1874CD;
     text-decoration: none;
     font-weight: bold; /* Make the text bold */
     font-family: Arial, sans-serif;
@@ -675,7 +675,7 @@ a {
 /* ===================Image container=============================== */
 
 .custom-image-container {
-  width: 90%;
+  width: 95%;
   background-color:#1874CD ;  
   display: flex;
   align-items: flex-start;
@@ -761,7 +761,7 @@ a {
 }
 
 .main-a {
-  color:   #FFA07A;
+  color:   #008080 ;
   text-decoration: none;
   font-weight: bold; /* Make the text bold */
   font-family: Arial, sans-serif;
@@ -847,7 +847,7 @@ a {
   }
   
   .custom-a {
-    color:#87CEFA   ; 
+    color:#1874CD; 
     text-decoration: none;
     font-weight: bold; /* Make the text bold */
     font-family: Arial, sans-serif;
@@ -857,6 +857,188 @@ a {
 }
 
 
+
+
+// ==================================Help_Desk_Section============================
+.Help_Desk-custom-image-container {
+  width: 95%;
+  background-color: #1874CD;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  position: relative;
+  margin-top: 10%;
+}
+
+.Help_Desk-custom-image-container .Help_Desk-custom-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.Help_Desk-custom-image-container .Help_Desk-custom-image img {
+  width: 600px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.Help_Desk-custom-text-container {
+  color: white;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 20px;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 90px;
+}
+
+.Help_Desk-custom-text-container h2 {
+  margin-bottom: 20px;
+}
+
+.Help_Desk-custom-box-text h1 {
+  font-size: 50px;
+}
+
+.Help_Desk-custom-box-text p {
+  font-size: 20px;
+  position: static;
+}
+
+.Help_Desk-custom-box-text-span {
+  font-size: 50px;
+  color: #87CEFA;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Help_Desk-custom-list {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.Help_Desk-custom-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Help_Desk-custom-list p {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.Help_Desk-custom-list p i {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #87CEFA;
+}
+
+.Help_Desk-custom-mentorship-btn {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid white;
+  margin-top: 5%;
+}
+
+.Help_Desk-main-a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .Help_Desk-custom-image-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30%;
+    width: 90%;
+    border-radius: 30px;
+  }
+
+  .Help_Desk-custom-image {
+    display: none;
+  }
+
+  .Help_Desk-custom-text-container {
+    margin-left: 0;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .Help_Desk-custom-text-container h2 {
+    margin-bottom: 30px;
+  }
+
+  .Help_Desk-custom-text-container h1 {
+    font-size: 40px;
+  }
+
+  .Help_Desk-custom-text-container p {
+    font-size: 20px;
+  }
+
+  .Help_Desk-custom-box-text-span {
+    font-size: 40px;
+  }
+
+  .Help_Desk-custom-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Help_Desk-custom-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .Help_Desk-custom-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .Help_Desk-custom-list li i {
+    margin-right: 10px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    color: var(--choosen-pink);
+  }
+
+  .Help_Desk-custom-list p {
+    margin-bottom: 19px;
+  }
+
+  .Help_Desk-custom-mentorship-btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 10%;
+  }
+
+  .Help_Desk-custom-a {
+    color: #1874CD;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+  }
+}
 
 // ==============================Testimonial  Section=============================
 .testimonial-container{
