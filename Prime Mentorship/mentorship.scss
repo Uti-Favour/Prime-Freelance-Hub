@@ -279,23 +279,24 @@
   display: flex;
   align-items: center;
   padding: 50px;
-  background-color: #f5f5f5;
+  flex-direction: row; /* Default direction: row */
 }
-
 .text-content {
   flex: 1;
-  padding-right: 20px;
 }
 
 .text-content h2 {
-  font-size: 24px;
   margin-bottom: 10px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
 }
 
 .text-content p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: #444444;
 }
 
 .buttons {
@@ -303,13 +304,21 @@
   gap: 10px;
 }
 
+.buttons .fas{
+font-size: 20px;
+margin-left: 5px;
+}
+
+/* Update the button styles */
 .buttons button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  color: #fff; /* Text color for better contrast */
   border: none;
   cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
 }
+
 
 .image-container {
   flex: 1;
@@ -319,7 +328,70 @@
 .image-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 30px;
 }
+
+
+.mentorship-span{
+  color:  #FF8250;
+  font-style: italic;
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* Apply this style only for screens with a maximum width of 768px */
+  .mentorship-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .text-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444444;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+ .buttons .btn{
+    padding: 10px 20px;
+    background-color:  #FFA07A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .image-container {
+    flex: 1;
+    text-align: center;
+    margin-top: auto; /* Push the image to the bottom */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
+// ========================2nd Description===============
 
 .second-mentorship-section {
   display: flex;
@@ -350,9 +422,9 @@
   gap: 10px;
 }
 
-.buttons button {
+.buttons .btn-2 {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: green;
   color: #fff;
   border: none;
   cursor: pointer;
