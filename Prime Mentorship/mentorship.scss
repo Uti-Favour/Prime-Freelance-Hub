@@ -503,6 +503,122 @@ margin-left: 5px;
 
 
 
+// ===========================Third Box================================
+.third-mentorship-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  flex-direction: row; /* Default direction: row */
+  margin-top: 5%;
+}
+.third-text-content {
+  flex: 1;
+}
+
+.third-text-content h2 {
+  margin-bottom: 10px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.third-text-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .fas{
+font-size: 20px;
+margin-left: 5px;
+}
+
+/* Update the button styles */
+.buttons button {
+  padding: 10px 20px;
+  color: #fff; /* Text color for better contrast */
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+
+.third-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.third-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+
+.third-mentorship-span{
+  color:  darkorange;
+  font-style: italic;
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* Apply this style only for screens with a maximum width of 768px */
+  .third-mentorship-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .third-text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .third-text-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .third-text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444444;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+ .buttons .btn{
+    padding: 10px 20px;
+    background-color:  #FFA07A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .third-image-container {
+    flex: 1;
+    text-align: center;
+    margin-top: auto; /* Push the image to the bottom */
+  }
+  
+  .third-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
 // =======================How to get Started===========================
 .row_container{
   padding-top: 10%;
