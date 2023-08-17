@@ -358,7 +358,6 @@ margin-left: 5px;
   
   .text-content h2 {
     font-size: 40px;
-    width: 700;
   }
   
   .text-content p {
@@ -402,12 +401,15 @@ margin-left: 5px;
 .second-mentorship-section {
   display: flex;
   align-items: center;
-  padding: 50px;
+  padding: 50px 0;
   flex-direction: row; /* Default direction: row */
-  margin-top: 5%;
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+
 }
 .second-text-content {
-  padding-left: 30px;
+  margin-left: 50px;
   flex: 1;
 }
 
@@ -423,6 +425,7 @@ margin-left: 5px;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #444444;
+  width: 90%;
 }
 
 .buttons {
