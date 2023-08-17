@@ -100,132 +100,6 @@
     }
   }
 
-
-
-
-  // ====================================Mentorship======================================
-  
-  .main-box-container{
-    padding-top: 100px;
-  }
-  .box-container {
-    width: 90%; /* Adjust the width as needed */
-    height: 600px; /* Adjust the height as needed */
-    background-color: var(--primary); /* Set your desired background color */
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center horizontally */
-    margin: 0 auto; /* To center the container */
-    position: relative;
-    border-radius: 30px;
-  }
-  
-  .text-section {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Vertically center items */
-    align-items: flex-start; /* Align items to the left */
-    margin-left: 5%;
-    color: white;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-size: 45px;
-  }
-  
-  p {
-    font-size: 25px;
-    margin-bottom: 20px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-family: 'Roboto', sans-serif;
-  }
-  .span-like {
-    font-size: 50px;
-    color: yellow;
-    font-style: italic;
-  }
-  
-  .prime-btn {
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    border: 1px solid white;
-    margin-top: 10%;
-  }
-  
-  a {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: bold; /* Make the text bold */
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-  }
-  .box-image {
-    height: 600px; /* Adjust the height as needed */
-  }
-  
-  .box-img {
-    width: 100%; /* Adjust the width as needed */
-    height: 600px; /* Adjust the height as needed */
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-  }
-  
-  /* Media query for smaller devices */
-  @media (max-width: 768px) {
-
-    .main-box-container{
-      padding-top: 0;
-    }
-    .box-container {
-      flex-direction: column;
-      height: 600px;
-      width: 100%;
-      border-radius: 0;
-    }
-  
-    .text-section {
-      width: 100%;
-    }
-  
-    .box-image {
-      order: -1; /* Change the order to place the image at the top */
-      width: 100%;
-      height: auto;
-      display: none;
-    }
-  
-    .box-img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
-  
-    .text-section h1 {
-      margin-top: 30px;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-size: 45px;
-    }
-  
-    .text-section p {
-      font-size: 20px;
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-family: 'Roboto', sans-serif;
-    }
-    .text-section .span-like {
-      font-size: 40px;
-    }
-  }
-  
-
   // ====================================Why Prime==============================================
   .why_prime_mentorship_main_container {
     width: 90%; /* Set your desired width */
@@ -398,6 +272,54 @@
 
 
 // ==============================What's Prime Mentorship=====================
+
+
+
+.mentorship-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* ============footer================== */
 .footer{
