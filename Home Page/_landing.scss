@@ -1,9 +1,9 @@
 :root {
   /*color*/
-  --primary: #14a800;
-  --primary-dark: #3c8224;
-  --primary-dark-2: #5e6d55;
-  --primary-dark-3: #e4ebe4;
+  --primary-blue: rgb(74, 142, 247) ;
+  --primary-green: rgb(96, 198, 216);
+  --primary-blue-light: rgb(84, 166, 239);
+  --primary-green-light: rgb(91, 184, 227);
   --primary-dark-4: #13544e;
   --primary-light: #e9f7e5;
   --primary-light-2: #f2f7f2;
@@ -17,13 +17,6 @@
   --fav-blue: blue;
   --blue-dark: #254d97;
   --choosen-pink: pink;
-  --width: 1140px;
-  --input-height: 40px;
-  --input-radius: 20px;
-  --input-form-width: 300px;
-
-  --svg-white: invert(98%) sepia(0%) saturate(0%) hue-rotate(9deg)
-    brightness(103%) contrast(103%);
 }
 
 
@@ -863,7 +856,7 @@ a {
 // ==================================Help_Desk_Section============================
 .Help_Desk-custom-image-container {
   width: 95%;
-  background-color: #1874CD;
+  background-color: var(--primary-blue);
   display: flex;
   align-items: flex-start;
   justify-content: center;

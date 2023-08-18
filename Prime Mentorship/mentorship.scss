@@ -530,6 +530,7 @@ margin-left: 5px;
   margin: 0 auto;
   justify-content: center;
   width: 95%;
+  display: none;
 
 }
 .third-text-content {
@@ -657,7 +658,7 @@ margin-left: 5px;
   margin: 0 auto;
 
   h2{
-    color: #fff;
+    color: #444444;
     font-size: 32px;
     padding: 50px 0;
     text-align: center;
@@ -674,20 +675,24 @@ margin-left: 5px;
 }
 
 .price-col{
-  background: #1f283b;
+  background-color: #fff;
   padding:10% 15% ;
   border-radius: 10px;
   color: #fff;
   text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
   p{
-    font-size: 22px;
+    font-size: 35px;
+    color: #444444;
+    font-weight: 600;
   }
 
   h3{
     font-size: 44px;
     margin: 20px 0 40px;
     font-weight: 500;
+    color: #444444;
 
     .month-span{
       font-size: 16px;
@@ -697,24 +702,19 @@ margin-left: 5px;
   ul{
     text-align: left;
     margin: 20px 0;
-    color: #ddd;
+    color: #444444;
     list-style: none;
 
     li{
       margin: 15px 0;
+      color: #444444;
     }
+
+    
   }
 
 
 }
-
-.price-col ul li::before{
-  content: '\2022';
-  color: #e33058;
-  font-weight: bold;
-  margin-right: 8px;
-}
-
 
 a .get-course{
   margin-top: 50px;
@@ -737,6 +737,12 @@ a .get-course{
 }
 
 
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
 // =======================How to get Started===========================
 
   h1{
