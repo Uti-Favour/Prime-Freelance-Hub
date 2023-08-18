@@ -663,15 +663,28 @@ margin-left: 5px;
   justify-content: center;
   margin: 0 auto;
 
-  h1{
-    color: #444444;
-    font-size: 50px;
-    padding: 50px 0;
-    text-align: center;
-    font-weight: 600;
-    position: relative;
-    font-family: 'Bricolage Grotesque', sans-serif;
-  }
+}
+
+.pricing_container h1{
+  margin-top: 30px;
+text-align: center;
+padding-top: 10%;
+margin-bottom: 60px;
+font-weight: 600;
+position: relative;
+font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+.pricing_container h1::after{
+content: "";
+background: #008080 ;
+width: 100px;
+height: 5px;
+position: absolute;
+bottom: -5px;
+left: 50%;
+transform: translateX(-50%);
 
 }
 
