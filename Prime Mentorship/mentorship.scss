@@ -168,7 +168,7 @@
 
 
     .free{
-      color: green;
+      color: #408040;
       font-style: italic;
     }
     .buttons-container {
@@ -180,7 +180,7 @@
   
     .button-1 {
       padding: 10px 15px;
-      background-color: green;
+      background-color: #408040;
       color: white;
       border: none;
       border-radius: 30px ;
@@ -585,7 +585,7 @@ margin-left: 5px;
 
 
 .third-mentorship-span{
-  color:  #DAA520;
+  color:  #FFA07A;
   font-style: italic;
 }
 
@@ -625,7 +625,7 @@ margin-left: 5px;
   
  .buttons .btn{
     padding: 10px 20px;
-    background-color:  #DAA520;
+    background-color:  #FFA07A;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -645,6 +645,93 @@ margin-left: 5px;
   }
   
 }
+
+
+
+// ===============================Prime Pricinf===========================
+
+.pricing_container{
+  width: 95%;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+
+  h2{
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+  }
+}
+
+.price-row{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat( auto-fit , minmax(250px , 1fr)) ;
+  grid-gap: 25px;
+}
+
+.price-col{
+  background: #1f283b;
+  padding:10% 15% ;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+
+  p{
+    font-size: 22px;
+  }
+
+  h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+
+    .month-span{
+      font-size: 16px;
+    }
+  }
+
+  ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+
+    li{
+      margin: 15px 0;
+    }
+  }
+
+
+}
+
+.price-col ul li::before{
+  content: '\2022';
+  color: #e33058;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.get-course{
+  width: 10%;
+  padding: 14px 0;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #e33058;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition:  background 0.5s;
+}
+
+.get-course:hover{
+  background: #e33058;
+}
+
 
 // =======================How to get Started===========================
 
