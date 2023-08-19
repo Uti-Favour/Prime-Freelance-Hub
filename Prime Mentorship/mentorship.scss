@@ -102,51 +102,59 @@ nav .fas {
 .centered-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center; /* Add this to vertically center content */
   min-height: 100vh;
+  width: 100%; /* Take up full width of the container */
+  background-color: #ffffff;
+  margin-top: 8%;
 }
 
 /* Styles for the landing page container */
 .landing_parent_page_container {
   text-align: center;
-}
-
-.landing_page_container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Take up full height of the container */
 }
 
 /* Styles for the landing page text content */
 .landing_page_texts {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1100px;
+  width: 100%; /* Take up full width of the container */
+  height: 100%; /* Take up full height of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing_page_texts h1 {
-  font-size: 24px;
+  font-size: 55px;
   margin-bottom: 10px;
 }
 
 .landing_page_texts p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 /* Styles for the button */
 .landing_page_texts button {
-  background-color: #007bff;
+  background-color: #008080;
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 20px 60px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
+.mentorship_span{
+  color: #008080;
+}
 .landing_page_texts button:hover {
   background-color: #0056b3;
 }
