@@ -717,7 +717,40 @@ nav .fas {
   }
 }
 
-// =======================Testimonial========================
+
+// ===================================Blog Concept=================================
+.box_concept{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10%;
+
+}
+
+.box_concept_col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  p{
+    padding: 0;
+  }
+
+  h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+}
+
+
+// ====================================Testimonial=================================
 
 .testimonials .testimonial-header{
   margin-top: 30px;
