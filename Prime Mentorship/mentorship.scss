@@ -96,6 +96,66 @@ nav .fas {
   }
 }
 
+
+
+// ===========================Landing Page=================================
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Styles for the landing page container */
+.landing_parent_page_container {
+  text-align: center;
+}
+
+.landing_page_container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the landing page text content */
+.landing_page_texts {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.landing_page_texts h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.landing_page_texts p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Styles for the button */
+.landing_page_texts button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.landing_page_texts button:hover {
+  background-color: #0056b3;
+}
+
+.landing_page_texts button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 // ====================================Why Prime==============================================
 .why_prime_mentorship_main_container {
   width: 90%; /* Set your desired width */
