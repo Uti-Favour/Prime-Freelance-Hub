@@ -709,6 +709,33 @@ nav .fas {
 
 // =======================Testimonial========================
 
+.testimonials .testimonial-header{
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.header_p{
+color: #777777;;
+}
+
+.testimonials .testimonial-header::after{
+  content: "";
+  background: #008080;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .testimonial_row{
 margin-top: 5%;
 display: flex;
@@ -759,6 +786,10 @@ gap: 20px;
   color: #008080;
 }
 @media (max-width:700px){
+
+  .testimonials .testimonial-header{
+    font-size: 30px;
+  }
   .testimonial_row{
     flex-direction: column;
   }
