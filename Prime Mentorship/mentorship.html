@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mentorhip</title>
-    <link rel="stylesheet" href="mentorship.css">
+    <link rel="stylesheet" href="mentorship.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-</head>
-<body>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="landing_page_section">
-        <div class="navbar-container">
-          <nav>
-          <img src="Images/logo.png" alt="" class="logo">
+      <div class="navbar-container">
+        <nav>
+          <img src="Images/logo.png" alt="" class="logo" />
           <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
@@ -40,220 +48,365 @@
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <!-- ================================Why Prime=================================== -->
+    <div class="why_prime_mentorship_main_container">
+      <div class="why_prime_mentorship_content">
+        <div class="mentorship_video">
+          <video
+            src="Mentorship Video/production_id 4115236 (2160p).mp4"
+            loop
+            muted
+            controls
+            autoplay
+          ></video>
         </div>
-        </div>
-        
-        <script>
-          var sidemenu = document.getElementById("sidemenu");
-        
-          function openmenu(){
-            sidemenu.style.right = "0";
-          }
-          function closemenu(){
-            sidemenu.style.right = "-200px";
-          }
-        </script>
 
+        <div class="text_container">
+          <h2 class="h2_header">
+            Up your work game,<span class="free"> it's free!</span>
+          </h2>
+          <ul>
+            <h2><i class="fa-regular fa-star"></i> No cost to join</h2>
+            <p>
+              Register and browse professionals, explore projects, or even book
+              a consultation.
+            </p>
 
-<!-- ================================Why Prime=================================== -->
-<div class="why_prime_mentorship_main_container">
-  <div class="why_prime_mentorship_content">
+            <h2>
+              <i class="fa-solid fa-magnifying-glass"></i> Post a job and hire
+              top talent
+            </h2>
+            <p>
+              Finding talent doesn’t have to be a chore. Post a job or we can
+              search for you!
+            </p>
 
-    <div class="mentorship_video">
-      <video src="Mentorship Video/production_id 4115236 (2160p).mp4" loop muted  controls autoplay></video>
-    </div>
+            <h2>
+              <i class="fas fa-dollar-sign"></i> Work with the best coaches out
+              there!
+            </h2>
+            <p>
+              Upwork makes it affordable to up your work and take advantage of
+              low transaction rates.
+            </p>
+          </ul>
 
-    <div class="text_container">
-
-      <h2 class="h2_header">Up your work game,<span class="free"> it's free!</span></h2>
-      <ul>
-        <h2> <i class="fa-regular fa-star"></i>
-          No cost to join</h2>
-        <p>Register and browse professionals, explore projects, or even book a consultation.</p>
-
-        <h2><i class="fa-solid fa-magnifying-glass"></i>
-          Post a job and hire top talent</h2>
-        <p>Finding talent doesn’t have to be a chore. Post a job or we can search for you!</p>
-
-        <h2> <i class="fas fa-dollar-sign"></i>
-          Work with the best coaches out there!</h2>
-        <p>Upwork makes it affordable to up your work and take advantage of low transaction rates.</p>
-      </ul>
-
-      <div class="buttons-container">
-        <button class="button-1">Sign up for Free!</button>
-        <button class="button-2">Learn how to start</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- =====================================What's Prime=========================== -->
-
-<div class="mentorship-section">
-  <div class="text-content">
-    <h2>Welcome to Our <span class="mentorship-span"> Mentorship</span> Program</h2>
-    <p>Our mentorship program goes beyond the ordinary to provide you with an exceptional and 
-      personalized experience on your journey. We understand 
-      that navigating the complexities of your chosen field can be daunting, which is why we have
-       meticulously designed this program to offer you the guidance and support you need to thrive.</p>
-    <div class="buttons">
-      <button class="btn" style="background: #008080 ;" >Enroll Now <i class="fas fa-arrow-right fa-lg"></i></button>
-      <button class="btn" style="background: #008080 ;"> Learn More  <i class="fas fa-info-circle"></i></button> 
-    </div>
-  </div>
-  <div class="image-container">
-    <img src="Mentorship Images/Mentorship-1.jpg" alt="Mentorship Image" >
-  </div>
-</div>
-
-<!-- ===================================second-mentorship-section================================= -->
-<div class="second-mentorship-section">
-  <div class="second-image-container">
-    <img src="Mentorship Images/img-2.jpg" alt="Video Thumbnail">
-    <!-- You can replace the image with a video element if needed -->
-  </div>
-  <div class="second-text-content">
-    <h2>Discover <span class="second-mentorship-span"> guidance</span> on path to success</h2>
-    <p>In a rapidly evolving professional landscape, staying ahead requires not only knowledge but also
-       a keen understanding of industry trends, emerging technologies, and changing dynamics. Our mentors, 
-       armed with their extensive experience, keep themselves updated with the latest developments. </p>
-    <div class="buttons">
-      <button style="background: #008080 ;">Get Started  <i class="fas fa-play-circle"></i></button>
-      <button style="background: #008080 ;">Contact Us  <i class="fas fa-envelope"></i></button>
-    </div>
-  </div>
-</div>
-
-
-<!-- ==================================Prime Pricing=============================== -->
-<div class="pricing-parent-container">
-<div class="pricing_container">
-  <h1>Choose <span class="italic">your</span> plan </h1>
-  <div class="price-row">
-    <div class="price-col">
-      <p class="price_class">Begginers <i class="fas fa-rocket"></i></p>
-      <h3> 19$   <span class="month-span">/ month</span></h3>
-      <p class="description">Launch your journey with essential features to get started.</p>
-      <ul>
-        <li>   <i class="fas fa-check-circle green"></i> 1 Website</li>
-        <li>   <i class="fas fa-check-circle green"></i> 10 GB Disk Space</li>
-        <li>   <i class="fas fa-check-circle green"></i> Freee Email Address</li>
-        <li>   <i class="fas fa-check-circle green"></i> Basic wesite Builder</li>
-        <li>  <i class="fas fa-times-circle red"></i> No SSL Certificate</li>
-        <li>   <i class="fas fa-times-circle red"></i> Limited Support</li>
-      </ul>
-      <a class="get-course">Get this course <i class="fas fa-arrow-right" style="transform: rotate(-30deg); margin-left: 8px; color: #008080;"></i></a>
-    </div>
-
-    <div class="price-col">
-      <p class="price_class">Advanced <i class="fas fa-cogs"></i></p>
-      <h3> 50$   <span class="month-span">/ month</span></h3>
-      <p class="description">Unlock advanced capabilities for greater control and customization.</p>
-      <ul>
-        <li>   <i class="fas fa-check-circle green"></i> 1 Website</li>
-        <li>   <i class="fas fa-check-circle green"></i> 10 GB Disk Space</li>
-        <li>   <i class="fas fa-check-circle green"></i> Freee Email Address</li>
-        <li>   <i class="fas fa-check-circle green"></i> Basic wesite Builder</li>
-        <li>  <i class="fas fa-check-circle green"></i>  No SSL Certificate</li>
-        <li>  <i class="fas fa-times-circle red"></i> Limited Support</li>
-      </ul>
-      <a class="get-course">Get this course <i class="fas fa-arrow-right" style="transform: rotate(-30deg); margin-left: 8px; color: #008080;" ></i></a>
-    </div>
-
-    <div class="price-col">
-      <p class="price_class">Premium  <i class="fas fa-gem"></i></p>
-      <h3> 150$   <span class="month-span">/ month</span></h3>
-      <p class="description">Experience the ultimate level of service with premium features and benefits.</p>
-      <ul>
-        <li> <i class="fas fa-check-circle green"></i> 1 Website</li>
-        <li> <i class="fas fa-check-circle green"></i> 10 GB Disk Space</li>
-        <li> <i class="fas fa-check-circle green"></i> Freee Email Address</li>
-        <li> <i class="fas fa-check-circle green"></i> Basic wesite Builder</li>
-        <li> <i class="fas fa-check-circle green"></i> No SSL Certificate</li>
-        <li> <i class="fas fa-check-circle green"></i> Limited Support</li>
-      </ul>
-      <a class="get-course">Get this course    <i class="fas fa-arrow-right" style="transform: rotate(-30deg); margin-left: 8px; color: #008080;"></i></a>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- ======================How to get Started================== -->
-
-<div class="row_container">
-  <h1 class="custom-header">How to Get Started</h1>
-<div class="rows">
-  <div class="services">
-    <i class="fas fa-credit-card"></i>
-      <h2>Make your payment</h2>
-      <p>Securely complete your transaction by making a payment using various available 
-        methods, ensuring a smooth start to your journey.</p>
-          <a href="#" class="btn-step">Explore</a>
-  </div>
-  <div class="services">
-    <i class="fas fa-check-circle"></i>
-      <h2>Confirm registration</h2>
-      <p>Verify and confirm your registration to solidify your participation, ensuring 
-        that you're officially enrolled and ready to proceed.</p>
-          <a href="#" class="btn-step">Explore</a>
-  </div>
-  <div class="services">
-    <i class="fas fa-user-tie"></i>
-      <h2>Account features</h2>
-      <p>Receive personalized guidance and support from a dedicated mentor who will help 
-        you navigate and excel in your chosen endeavor.</p>
-          <a href="#" class="btn-step">Explore</a>
-  </div>
-</div>
-</div>
-
-<!-- ===================footer======================== -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-rows">
-      <div class="footer-col">
-        <h4>Prime Freelance Agency</h4>
-        <ul>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">our services</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Prime Freelance Academy</h4>
-        <ul>
-          <li><a href="#">Get started</a></li>
-          <li><a href="#">Make enquires</a></li>
-          <li><a href="#">Get Help</a></li>
-          <li><a href="#">View Courses</a></li>
-          <li><a href="#">Payment options</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Prime Freelance Mentorship</h4>
-        <ul>
-          <li><a href="#">Make Payment</a></li>
-          <li><a href="#">Get Information</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>follow Prime Freelance</h4>
-        <div class="online-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <div class="buttons-container">
+            <button class="button-1">Sign up for Free!</button>
+            <button class="button-2">Learn how to start</button>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- =====================================What's Prime=========================== -->
+
+    <div class="mentorship-section">
+      <div class="text-content">
+        <h2>
+          Welcome to Our
+          <span class="mentorship-span"> Mentorship</span> Program
+        </h2>
+        <p>
+          Our mentorship program goes beyond the ordinary to provide you with an
+          exceptional and personalized experience on your journey. We understand
+          that navigating the complexities of your chosen field can be daunting,
+          which is why we have meticulously designed this program to offer you
+          the guidance and support you need to thrive.
+        </p>
+        <div class="buttons">
+          <button class="btn" style="background: #008080">
+            Enroll Now <i class="fas fa-arrow-right fa-lg"></i>
+          </button>
+          <button class="btn" style="background: #008080">
+            Learn More <i class="fas fa-info-circle"></i>
+          </button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Mentorship Images/Mentorship-1.jpg" alt="Mentorship Image" />
+      </div>
+    </div>
+
+    <!-- ===================================second-mentorship-section================================= -->
+    <div class="second-mentorship-section">
+      <div class="second-image-container">
+        <img src="Mentorship Images/img-2.jpg" alt="Video Thumbnail" />
+        <!-- You can replace the image with a video element if needed -->
+      </div>
+      <div class="second-text-content">
+        <h2>
+          Discover <span class="second-mentorship-span"> guidance</span> on path
+          to success
+        </h2>
+        <p>
+          In a rapidly evolving professional landscape, staying ahead requires
+          not only knowledge but also a keen understanding of industry trends,
+          emerging technologies, and changing dynamics. Our mentors, armed with
+          their extensive experience, keep themselves updated with the latest
+          developments.
+        </p>
+        <div class="buttons">
+          <button style="background: #008080">
+            Get Started <i class="fas fa-play-circle"></i>
+          </button>
+          <button style="background: #008080">
+            Contact Us <i class="fas fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================Prime Pricing=============================== -->
+    <div class="pricing-parent-container">
+      <div class="pricing_container">
+        <h1>Choose <span class="italic">your</span> plan</h1>
+        <div class="price-row">
+          <div class="price-col">
+            <p class="price_class">Begginers <i class="fas fa-rocket"></i></p>
+            <h3>19$ <span class="month-span">/ month</span></h3>
+            <p class="description">
+              Launch your journey with essential features to get started.
+            </p>
+            <ul>
+              <li><i class="fas fa-check-circle green"></i> 1 Website</li>
+              <li>
+                <i class="fas fa-check-circle green"></i> 10 GB Disk Space
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Freee Email Address
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Basic wesite Builder
+              </li>
+              <li>
+                <i class="fas fa-times-circle red"></i> No SSL Certificate
+              </li>
+              <li><i class="fas fa-times-circle red"></i> Limited Support</li>
+            </ul>
+            <a class="get-course"
+              >Get this course
+              <i
+                class="fas fa-arrow-right"
+                style="
+                  transform: rotate(-30deg);
+                  margin-left: 8px;
+                  color: #008080;
+                "
+              ></i
+            ></a>
+          </div>
+
+          <div class="price-col">
+            <p class="price_class">Advanced <i class="fas fa-cogs"></i></p>
+            <h3>50$ <span class="month-span">/ month</span></h3>
+            <p class="description">
+              Unlock advanced capabilities for greater control and
+              customization.
+            </p>
+            <ul>
+              <li><i class="fas fa-check-circle green"></i> 1 Website</li>
+              <li>
+                <i class="fas fa-check-circle green"></i> 10 GB Disk Space
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Freee Email Address
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Basic wesite Builder
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> No SSL Certificate
+              </li>
+              <li><i class="fas fa-times-circle red"></i> Limited Support</li>
+            </ul>
+            <a class="get-course"
+              >Get this course
+              <i
+                class="fas fa-arrow-right"
+                style="
+                  transform: rotate(-30deg);
+                  margin-left: 8px;
+                  color: #008080;
+                "
+              ></i
+            ></a>
+          </div>
+
+          <div class="price-col">
+            <p class="price_class">Premium <i class="fas fa-gem"></i></p>
+            <h3>150$ <span class="month-span">/ month</span></h3>
+            <p class="description">
+              Experience the ultimate level of service with premium features and
+              benefits.
+            </p>
+            <ul>
+              <li><i class="fas fa-check-circle green"></i> 1 Website</li>
+              <li>
+                <i class="fas fa-check-circle green"></i> 10 GB Disk Space
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Freee Email Address
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> Basic wesite Builder
+              </li>
+              <li>
+                <i class="fas fa-check-circle green"></i> No SSL Certificate
+              </li>
+              <li><i class="fas fa-check-circle green"></i> Limited Support</li>
+            </ul>
+            <a class="get-course"
+              >Get this course
+              <i
+                class="fas fa-arrow-right"
+                style="
+                  transform: rotate(-30deg);
+                  margin-left: 8px;
+                  color: #008080;
+                "
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================How to get Started================== -->
+
+    <div class="row_container">
+      <h1 class="custom-header">How to Get Started</h1>
+      <div class="rows">
+        <div class="services">
+          <i class="fas fa-credit-card"></i>
+          <h2>Make your payment</h2>
+          <p>
+            Securely complete your transaction by making a payment using various
+            available methods, ensuring a smooth start to your journey.
+          </p>
+          <a href="#" class="btn-step">Explore</a>
+        </div>
+        <div class="services">
+          <i class="fas fa-check-circle"></i>
+          <h2>Confirm registration</h2>
+          <p>
+            Verify and confirm your registration to solidify your participation,
+            ensuring that you're officially enrolled and ready to proceed.
+          </p>
+          <a href="#" class="btn-step">Explore</a>
+        </div>
+        <div class="services">
+          <i class="fas fa-user-tie"></i>
+          <h2>Account features</h2>
+          <p>
+            Receive personalized guidance and support from a dedicated mentor
+            who will help you navigate and excel in your chosen endeavor.
+          </p>
+          <a href="#" class="btn-step">Explore</a>
+        </div>
+      </div>
+    </div>
+
+<!-- ============================Testimonial============================= -->
+<section class="testimonials">
+  <h1>Whats our mentee has to say</h1>
+  <p>This is what the our past student has to say</p>
+
+
+  <div class="testimonial_row">
+    <div class="testimonial-col">
+      <img src="Mentorship Images/prime logo coloured.png" alt="">
+      <div>
+        <p>I highly recommend Prime Freelance Agency to any freelancer
+          looking for a platform that understands our needs and fosters
+          growth. Thank you for making freelancing a fulfilling and reliable
+          endeavor.</p>
+          <h3>Uti Favour</h3>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+      </div>
+    </div>
+
+    <div class="testimonial-col">
+      <img src="Mentorship Images/prime logo coloured.png" alt="">
+      <div>
+        <p>I highly recommend Prime Freelance Agency to any freelancer
+          looking for a platform that understands our needs and fosters
+          growth. Thank you for making freelancing a fulfilling and reliable
+          endeavor.</p>
+
+          <h3>Uti Peace</h3>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+      </div>
+    </div>
   </div>
-</footer>
 
+</section>
 
-</body>
+    <!-- ===================footer======================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-rows">
+          <div class="footer-col">
+            <h4>Prime Freelance Agency</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">projects</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Prime Freelance Academy</h4>
+            <ul>
+              <li><a href="#">Get started</a></li>
+              <li><a href="#">Make enquires</a></li>
+              <li><a href="#">Get Help</a></li>
+              <li><a href="#">View Courses</a></li>
+              <li><a href="#">Payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Prime Freelance Mentorship</h4>
+            <ul>
+              <li><a href="#">Make Payment</a></li>
+              <li><a href="#">Get Information</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow Prime Freelance</h4>
+            <div class="online-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,214 +1,201 @@
 @use "_root";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  li {
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .navbar-container{
-    padding: 10px 10%;
-  }
-  nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-  }
-  
-  .logo{
-    width: 140px;
-  }
-  
-  nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  
-  nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: green;
-    color: white;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
-  
-  }
-  nav ul li a:hover::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-container {
+  padding: 10px 10%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: green;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
   width: 100%;
-  }
-  
-  
-  nav .fas{
-    display: none;
-  }
-  
-  
-  @media only  screen and (max-width:600px) {
-    nav .fas{
-      display: block;
-      font-size: 25px;
-    }
-  
-    nav ul {
-      background: blue;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100vh;
-      padding-top: 50px;
-      z-index: 2;
-      transition: right 0.5s;
-    }
-  
-    nav ul li{
-      display: block;
-      margin: 25px;
-    }
-  
-    nav ul .fas{
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
-    }
+}
+
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .fas {
+    display: block;
+    font-size: 25px;
   }
 
-  // ====================================Why Prime==============================================
-  .why_prime_mentorship_main_container {
-    width: 90%; /* Set your desired width */
-    margin: 0 auto; /* Center the container horizontally */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px; /* Add padding to create space */
-    margin-top: 80px;
-    display: none;
+  nav ul {
+    background: blue;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
   }
-  
-  .why_prime_mentorship_content {
-    display: flex;
-    align-items: flex-start;
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+}
+
+// ====================================Why Prime==============================================
+.why_prime_mentorship_main_container {
+  width: 90%; /* Set your desired width */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Add padding to create space */
+  margin-top: 80px;
+  display: none;
+}
+
+.why_prime_mentorship_content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mentorship_video {
+  flex: 1;
+  max-width: 50%; /* Adjust as needed */
+  margin-right: 20px; /* Create space between video and text */
+  video {
     width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
   }
-  
-  .mentorship_video {
-    flex: 1;
-    max-width: 50%; /* Adjust as needed */
-    margin-right: 20px; /* Create space between video and text */
-    video {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
+}
+
+.text_container {
+  flex: 1;
+
+  .h2_header {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
   }
-  
-  .text_container {
-    flex: 1;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    margin-top: 25px;
 
-
-
-    .h2_header{
-      font-family: 'Bricolage Grotesque', sans-serif;
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
       font-size: 45px;
-      margin-top: 20px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; /* Remove default margin */
-      margin-top: 25px;
- 
-
-      h2{
-        font-family: 'Bricolage Grotesque', sans-serif;
-        font-size: 45px;
-      }
-      li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px; /* Add space between list items */
-        i {
-          margin-right: 10px;
-        }
-      }
-      p {
-        margin-top: 5px;
-        margin-bottom: 25px;
-        font-size: 15px;
-      }
-    }
-
-
-    .free{
-      color: #008080 ;
-      font-style: italic;
-    }
-    .buttons-container {
+    li {
       display: flex;
-      margin-top: 20px; // Adjust as needed
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-family: 'Roboto', sans-serif;
+      align-items: center;
+      margin-bottom: 10px; /* Add space between list items */
+      i {
+        margin-right: 10px;
+      }
     }
-  
-    .button-1 {
-      padding: 10px 15px;
-      background-color: #008080 ;
-      color: white;
-      border: none;
-      border-radius: 30px ;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .button-2{
-      padding: 10px 20px;
-      color: black;
-      border: none;
-      border-radius: 30px ;
-      cursor: pointer;
-      margin-left: 20px;
-      border: 2px solid black;
-      font-size: 16px;
-      font-weight: 500;
-      background: transparent;
+    p {
+      margin-top: 5px;
+      margin-bottom: 25px;
+      font-size: 15px;
     }
   }
 
- 
-  
+  .free {
+    color: #008080;
+    font-style: italic;
+  }
+  .buttons-container {
+    display: flex;
+    margin-top: 20px; // Adjust as needed
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
 
+  .button-1 {
+    padding: 10px 15px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .button-2 {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+  }
+}
 
-
-  /* Media Query for Tablet and Larger Screens */
+/* Media Query for Tablet and Larger Screens */
 @media screen and (max-width: 768px) {
   .why_prime_mentorship_main_container {
     flex-direction: column; /* Revert to row layout */
@@ -243,34 +230,30 @@
   /* Existing styles... */
   margin-left: 0; /* No margin on mobile */
 
-  ul{
-    h2{
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-family: 'Roboto', sans-serif;
+  ul {
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 22px;
     }
   }
 
-  .button-1{
+  .button-1 {
     padding: 10px 100px;
     margin-top: 20px;
   }
 
-  .button-2{
+  .button-2 {
     display: none;
   }
 
-  p{
+  p {
     margin-bottom: 25px;
   }
-  i{
-    color: #008080 ;
+  i {
+    color: #008080;
   }
-
 }
-
-
-
 
 // ==============================What's Prime Mentorship=====================
 
@@ -290,7 +273,7 @@
 
 .text-content h2 {
   margin-bottom: 10px;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 60px;
   font-weight: 800;
 }
@@ -308,9 +291,9 @@
   gap: 10px;
 }
 
-.buttons .fas{
-font-size: 20px;
-margin-left: 5px;
+.buttons .fas {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 /* Update the button styles */
@@ -323,7 +306,6 @@ margin-left: 5px;
   font-size: 16px;
 }
 
-
 .image-container {
   flex: 1;
   text-align: center;
@@ -335,14 +317,10 @@ margin-left: 5px;
   border-radius: 30px;
 }
 
-
-.mentorship-span{
-  color:  #008080 ;
+.mentorship-span {
+  color: #008080;
   font-style: italic;
 }
-
-
-
 
 @media (max-width: 768px) {
   /* Apply this style only for screens with a maximum width of 768px */
@@ -354,14 +332,14 @@ margin-left: 5px;
 
   .text-content {
     flex: 1;
-    order: 2; 
+    order: 2;
     margin-top: 30px;
   }
-  
+
   .text-content h2 {
     font-size: 40px;
   }
-  
+
   .text-content p {
     font-size: 15px;
     line-height: 1.6;
@@ -369,15 +347,15 @@ margin-left: 5px;
     color: #444444;
     margin-top: 15px;
   }
-  
+
   .buttons {
     display: flex;
     gap: 10px;
   }
-  
- .buttons .btn{
+
+  .buttons .btn {
     padding: 10px 20px;
-    background-color:  #FFA07A;
+    background-color: #ffa07a;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -389,16 +367,13 @@ margin-left: 5px;
     margin-top: auto; /* Push the image to the bottom */
     order: 1; /* Change order for mobile */
   }
-  
+
   .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
-  
 }
-
-
 
 // ========================2nd Description===============
 
@@ -410,7 +385,6 @@ margin-left: 5px;
   margin: 0 auto;
   width: 95%;
   justify-content: center;
-
 }
 .second-text-content {
   flex: 1;
@@ -419,7 +393,7 @@ margin-left: 5px;
 
 .second-text-content h2 {
   margin-bottom: 10px;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 60px;
   font-weight: 800;
 }
@@ -437,9 +411,9 @@ margin-left: 5px;
   gap: 10px;
 }
 
-.buttons .fas{
-font-size: 20px;
-margin-left: 5px;
+.buttons .fas {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 /* Update the button styles */
@@ -452,7 +426,6 @@ margin-left: 5px;
   font-size: 16px;
 }
 
-
 .second-image-container {
   flex: 1;
   text-align: center;
@@ -464,14 +437,10 @@ margin-left: 5px;
   border-radius: 30px;
 }
 
-
-.second-mentorship-span{
-  color: #008080 ;
+.second-mentorship-span {
+  color: #008080;
   font-style: italic;
 }
-
-
-
 
 @media (max-width: 768px) {
   /* Apply this style only for screens with a maximum width of 768px */
@@ -486,12 +455,12 @@ margin-left: 5px;
     margin-left: 0;
     margin-top: 30px;
   }
-  
+
   .second-text-content h2 {
     font-size: 40px;
     margin-bottom: 10px;
   }
-  
+
   .second-text-content p {
     font-size: 15px;
     line-height: 1.6;
@@ -499,81 +468,74 @@ margin-left: 5px;
     color: #444444;
     margin-top: 15px;
   }
-  
+
   .buttons {
     display: flex;
     gap: 10px;
     margin-top: 20px;
   }
- 
-  
+
   .second-image-container {
     flex: 1;
     text-align: center;
     margin-top: auto; /* Push the image to the bottom */
   }
-  
+
   .second-image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
   }
-  
 }
 
 // ===============================Prime Pricing===========================
 
-.pricing-parent-container{
+.pricing-parent-container {
   padding-top: 50px;
 }
 
-.pricing_container{
+.pricing_container {
   width: 95%;
   min-height: 100vh;
   justify-content: left;
   margin: 0 auto;
-
 }
 
-.pricing_container h1{
-margin-top: 30px;
-text-align: center;
-padding-top: 10%;
-margin-bottom: 60px;
-font-weight: 600;
-position: relative;
-font-family: 'Bricolage Grotesque', sans-serif;
-font-size: 40px;
+.pricing_container h1 {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 40px;
 }
 
-
-.pricing_container h1::after{
-content: "";
-background: #008080 ;
-width: 100px;
-height: 5px;
-position: absolute;
-bottom: -5px;
-left: 50%;
-transform: translateX(-50%);
-
+.pricing_container h1::after {
+  content: "";
+  background: #008080;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-
-
-.price-row{
+.price-row {
   width: 90%;
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns:repeat( auto-fit , minmax(250px , 1fr)) ;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
   height: 550px;
 }
 
-.price-col{
+.price-col {
   background-color: #fff;
-  padding:10% 15% ;
+  padding: 10% 15%;
   border-radius: 20px;
   color: #fff;
   text-align: left;
@@ -583,105 +545,96 @@ transform: translateX(-50%);
   align-items: flex-start; /* Adjust as needed */
   height: 100%; /* Set a fixed height for uniform columns */
 
-  p{
+  p {
     font-size: 40px;
     color: #444444;
     font-weight: 600;
     position: relative;
   }
 
-  .description{
+  .description {
     font-size: 16px;
     font-weight: normal;
     text-align: left;
-    color:   #777777 ;
+    color: #777777;
     text-align: left;
   }
-  h3{
+  h3 {
     font-size: 44px;
     margin: 20px 0 40px;
     font-weight: 500;
-    color:  #444444 ;
+    color: #444444;
 
-    .month-span{
+    .month-span {
       font-size: 16px;
       color: #008080;
     }
   }
 
-  ul{
+  ul {
     text-align: left;
     margin: 30px 0;
     color: #444444;
     list-style: none;
 
-    li{
+    li {
       margin: 15px 0;
       color: #444444;
     }
-
-    
   }
-
-
 }
 
-.get-course{
+.get-course {
   width: 100%;
   padding: 14px 60px;
-  background: transparent ;
+  background: transparent;
   color: #444444;
   font-size: 15px;
   border-radius: 6px;
   cursor: pointer;
-  transition:  background 0.5s;
+  transition: background 0.5s;
   position: relative;
   top: 20px;
   border: 1px solid #008080;
 }
 
-.get-course:hover{
-  background: #008080 ;
+.get-course:hover {
+  background: #008080;
   color: #fff;
 }
 
-
-.price_class .fas{
-color: #008080;
+.price_class .fas {
+  color: #008080;
 }
 
-.green{
-  color: #008080 ;
+.green {
+  color: #008080;
 }
-.red{
-  color: #008080 ;
+.red {
+  color: #008080;
 }
-
 
 // =======================How to get Started===========================
 
-
-  .row_container .custom-header{
+.row_container .custom-header {
   margin-top: 30px;
   text-align: center;
   padding-top: 10%;
   margin-bottom: 60px;
   font-weight: 600;
   position: relative;
-  font-family: 'Bricolage Grotesque', sans-serif;
-  }
+  font-family: "Bricolage Grotesque", sans-serif;
+}
 
-
-.row_container .custom-header::after{
+.row_container .custom-header::after {
   content: "";
-  background: #008080 ;
+  background: #008080;
   width: 100px;
   height: 5px;
   position: absolute;
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .rows {
@@ -691,7 +644,6 @@ color: #008080;
   margin: 0 auto;
   width: 90%;
   justify-content: center;
-
 }
 
 .services {
@@ -704,15 +656,13 @@ color: #008080;
   transition: transform 0.5s, box-shadow 0.5s;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  color:  #777777;
-
-  
+  color: #777777;
 }
 
 .services i {
   font-size: 40px;
   margin-bottom: 40px;
-  color: #008080 ;
+  color: #008080;
 }
 
 .services h2 {
@@ -736,8 +686,8 @@ color: #008080;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn-step{
-  color:#444444 ;
+.btn-step {
+  color: #444444;
   text-decoration: none;
   position: relative;
   top: 30px;
@@ -745,104 +695,156 @@ color: #008080;
   font-weight: 600;
   font-size: 16px;
 }
-.btn-step:hover{
+.btn-step:hover {
   font-weight: 600;
 }
 
-
-@media (max-width: 768px){
-  .row_container{
+@media (max-width: 768px) {
+  .row_container {
     margin-top: 300%;
   }
 }
 
+// =======================Testimonial========================
 
+.testimonial_row{
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+}
+.testimonials{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonial-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonial-col img{
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonial-col p{
+  padding: 0;
+}
+.testimonial-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col .fa{
+  color: #f44336;
+}
+@media (max-width:700px){
+  .testimonial_row{
+    flex-direction: column;
+  }
+
+  .testimonial-col img{
+    margin: 0px;
+    margin-right: 15px;
+  }
+  
+}
 /* ============footer================== */
-.footer{
+.footer {
   margin-top: 50%;
 }
-.footer-container{
-	max-width: 1170px;
-	margin:auto;
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
 }
-.footer-rows{
-	display: flex;
-	flex-wrap: wrap;
+.footer-rows {
+  display: flex;
+  flex-wrap: wrap;
 }
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-.footer{
-	background-color: black;
-    padding: 70px 0;
+.footer {
+  background-color: black;
+  padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
 }
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
 }
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #fff;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
 }
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
 }
-.footer-col .online-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
+.footer-col .online-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
 }
-.footer-col .online-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+.footer-col .online-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
 }
 
 /*responsive*/
-@media(max-width: 767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
   }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
   }
-  @media(max-width: 574px){
-    .footer-col{
-      width: 100%;
-  }
-  }
+}
 
 /* -----------------------------------Footer--------------------------------------- */
