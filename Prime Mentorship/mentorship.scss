@@ -377,6 +377,10 @@ nav .fas {
 
 // ========================2nd Description===============
 
+.parent-container-second{
+  padding-top: 120px;
+}
+
 .second-mentorship-section {
   display: flex;
   align-items: center;
@@ -484,15 +488,11 @@ nav .fas {
   .second-image-container img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 }
 
 // ===============================Prime Pricing===========================
-
-.pricing-parent-container {
-  padding-top: 50px;
-}
 
 .pricing_container {
   width: 95%;
@@ -502,14 +502,14 @@ nav .fas {
 }
 
 .pricing_container h1 {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-bottom: 60px;
   font-weight: 600;
   position: relative;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 40px;
+  font-size: 55px;
 }
 
 .pricing_container h1::after {
@@ -621,11 +621,12 @@ nav .fas {
 .row_container .custom-header {
   margin-top: 30px;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-bottom: 60px;
   font-weight: 600;
   position: relative;
   font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 55px;
 }
 
 .row_container .custom-header::after {
@@ -703,7 +704,16 @@ nav .fas {
 
 @media (max-width: 768px) {
   .row_container {
-    margin-top: 300%;
+    margin-top: 10%;
+  }
+  .row_container .custom-header{
+    font-size: 35px;
+  }
+  .pricing-parent-container{
+  padding-top: 0;
+  }
+  .pricing_container h1{
+    font-size: 35px;
   }
 }
 
@@ -712,16 +722,11 @@ nav .fas {
 .testimonials .testimonial-header{
   margin-top: 30px;
   text-align: center;
-  padding-top: 10%;
-  margin-bottom: 20px;
-  font-size: 40px;
+  margin-bottom: 40px;
+  font-size: 55px;
   font-weight: 600;
   position: relative;
   font-family: "Bricolage Grotesque", sans-serif;
-}
-
-.header_p{
-color: #777777;;
 }
 
 .testimonials .testimonial-header::after{
@@ -784,11 +789,15 @@ gap: 20px;
 }
 .testimonial-col .fas{
   color: #008080;
+  margin-top: 10px;
 }
 @media (max-width:700px){
 
+  .testimonials{
+    margin-top: 290%;
+  }
   .testimonials .testimonial-header{
-    font-size: 30px;
+    font-size: 35px;
   }
   .testimonial_row{
     flex-direction: column;
@@ -805,7 +814,7 @@ gap: 20px;
 }
 /* ============footer================== */
 .footer {
-  margin-top: 50%;
+  margin-top: 10%;
 }
 .footer-container {
   max-width: 1170px;
