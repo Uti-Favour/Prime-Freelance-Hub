@@ -660,7 +660,7 @@ margin-left: 5px;
 .pricing_container{
   width: 95%;
   min-height: 100vh;
-  justify-content: center;
+  justify-content: left;
   margin: 0 auto;
 
 }
@@ -703,12 +703,12 @@ transform: translateX(-50%);
   padding:10% 15% ;
   border-radius: 20px;
   color: #fff;
-  text-align: center;
+  text-align: left;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 
   p{
-    font-size: 35px;
-    color: #008080 ;
+    font-size: 40px;
+    color: #444444;
     font-weight: 600;
   }
 
@@ -717,6 +717,7 @@ transform: translateX(-50%);
     font-weight: normal;
     text-align: left;
     color:   #777777 ;
+    text-align: left;
   }
   h3{
     font-size: 44px;
@@ -731,7 +732,7 @@ transform: translateX(-50%);
 
   ul{
     text-align: left;
-    margin: 20px 0;
+    margin: 30px 0;
     color: #444444;
     list-style: none;
 
@@ -749,14 +750,15 @@ transform: translateX(-50%);
 .get-course{
   width: 100%;
   padding: 14px 60px;
-  background: #008080 ;
-  color: #fff;
+  background: transparent ;
+  color: #444444;
   font-size: 15px;
   border-radius: 6px;
   cursor: pointer;
   transition:  background 0.5s;
   position: relative;
   top: 20px;
+  border: 1px solid #444444;
 }
 
 .get-course:hover{
