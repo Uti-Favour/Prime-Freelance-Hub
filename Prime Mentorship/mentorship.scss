@@ -559,6 +559,8 @@ transform: translateX(-50%);
 
 }
 
+
+
 .price-row{
   width: 90%;
   max-width: 1200px;
@@ -581,6 +583,7 @@ transform: translateX(-50%);
     font-size: 40px;
     color: #444444;
     font-weight: 600;
+    position: relative;
   }
 
   .description{
@@ -598,6 +601,7 @@ transform: translateX(-50%);
 
     .month-span{
       font-size: 16px;
+      color: #008080;
     }
   }
 
@@ -629,19 +633,24 @@ transform: translateX(-50%);
   transition:  background 0.5s;
   position: relative;
   top: 20px;
-  border: 1px solid #444444;
+  border: 1px solid #008080;
 }
 
 .get-course:hover{
-  background: #444444;
+  background: #008080 ;
   color: #fff;
 }
 
+
+.price_class .fas{
+color: #008080;
+}
+
 .green{
-  color: green;
+  color: #008080 ;
 }
 .red{
-  color: red;
+  color: #008080 ;
 }
 
 
